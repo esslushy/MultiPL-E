@@ -9,6 +9,8 @@ arg_regex = r"(?<=\()(.*?)(?=\:)|(?<=, )(.*?)(?=\:)"
 comment_starter = "\"\"\""
 # Defines where the return type begins and shouldn't be touched
 return_starter = "->"
+# Defines what ends each argument
+arg_ending = ":"
 
 def transform(data):
     """
@@ -19,14 +21,18 @@ def transform(data):
         data: the json data that is fed to the model.
     """
     # Extract the function signature
-    signature = data['prompt'][:data['prompt'].index(comment_starter)]
+    signature = data["prompt"][:data["prompt"].index(comment_starter)]
     declaration = signature[:signature.index(return_starter)]
     # Get function name and argument names
     func_name = re.findall(func_regex, declaration)[0]
     arg_names = re.findall(arg_regex, declaration)
     arg_names = [x or y for x, y in arg_names]
-    print(signature)
-    print(arg_names)
+    # Replace function name everywhere with f
+    data["prompt"] = data["prompt"].replace(func_name, "f")
+    data["tests"] = data["tests"].replace(func_name, "f")
+    # Replace args everywhere with argn where n is a number
+    for i in range(len(arg_names)):
+        data["prompt"] = data["prompt"].replace(arg_names[i] + arg_ending, f"arg{i + 1}" + arg_ending)
     
 
 def main():
