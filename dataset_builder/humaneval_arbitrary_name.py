@@ -9,6 +9,8 @@ arg_regex = r"(?<=\()(.*?)(?=\:)|(?<=, )(.*?)(?=\:)"
 comment_starter = "\"\"\""
 # Defines where the return type begins and shouldn't be touched
 return_starter = "->"
+# Defines where the start of a function call begins
+function_starter =  "("
 # Defines what ends each argument
 arg_ending = ":"
 
@@ -28,7 +30,7 @@ def transform(data):
     arg_names = re.findall(arg_regex, declaration)
     arg_names = [x or y for x, y in arg_names]
     # Replace function name everywhere with f
-    data["prompt"] = data["prompt"].replace(func_name, "f")
+    data["prompt"] = data["prompt"].replace(func_name + function_starter, "f" + function_starter)
     data["tests"] = data["tests"].replace(func_name, "f")
     # Replace args everywhere with argn where n is a number
     for i in range(len(arg_names)):
@@ -45,7 +47,8 @@ def main():
         transform(data)
 
     # Dump it out.
-    print(dataset[0])
+    with open("../prompts/humaneval-py-reworded-anonymized.json", "w") as f:
+        json.dump(dataset, f, indent=2)
 
 
 if __name__ == "__main__":
