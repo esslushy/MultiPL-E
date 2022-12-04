@@ -4,7 +4,7 @@ import gzip
 import json
 from pathlib import Path
 from tqdm import tqdm
-
+import json
 
 def main():
     args = argparse.ArgumentParser()
@@ -45,28 +45,12 @@ def main():
     if not exp_dir.exists():
         exp_dir.mkdir()
 
-    problems = datasets.load_dataset(
-        "JSON", data_files=args.dataset
-    )
-    problems = problems["test"]
-    start_index = args.input_start_index if args.input_start_index is not None else 0
-    stop_index = min(
-        len(problems),
-        start_index + args.input_limit
-        if args.input_limit is not None
-        else len(problems),
-    )
-    problems = problems.select(range(start_index, stop_index))
-    for problem in tqdm(problems, unit="problems"):
-        # NOTE(arjun): This is a litte hack to delay loading the model, so that we fail faster.
-        problem_filename = exp_dir / f"{problem['name']}.json.gz"
-        if problem_filename.exists():
-            with gzip.open(problem_filename, "rt") as f:
-                existing = json.loads(f.read())
-            completions = existing["completions"]
-        else:
-            completions = []
-
+    with open(args.dataset) as f:
+        problems = datasets.Dataset.from_list(
+            json.load(f)
+        )
+    for problem in iter(problems):
+        completions = []
         if len(completions) > args.completion_limit:
             # Not strictly necessary, but avoid a pointless rewriting of the file with no changes.
             continue
@@ -92,7 +76,7 @@ def main():
             "completions": completions,
             "stop_tokens": problem["stop_tokens"],
         }
-        with gzip.open(problem_filename, "wt") as f:
+        with open(exp_dir.joinpath(problem["name"])) as f:
             json.dump(result_json, f)
 
 
