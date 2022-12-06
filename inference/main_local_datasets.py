@@ -45,7 +45,7 @@ def main():
     if not exp_dir.exists():
         exp_dir.mkdir()
 
-    with open(args.dataset) as f:
+    with open(args.dataset, "r") as f:
         problems = datasets.Dataset.from_list(
             json.load(f)
         )
@@ -76,7 +76,7 @@ def main():
             "completions": completions,
             "stop_tokens": problem["stop_tokens"],
         }
-        with open(exp_dir.joinpath(problem["name"])) as f:
+        with open(exp_dir.joinpath(problem["name"] + ".json"), "w+") as f:
             json.dump(result_json, f)
 
 
