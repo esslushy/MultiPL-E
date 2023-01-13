@@ -13,7 +13,7 @@ def main():
         "--output-dir",
         type=str,
         required=True,
-        help="Directory in which to place JSON files with completions. The default is root_dataset-lang-model_name-temperature-reworded",
+        help="Directory in which to place JSON files with completions.",
     )
     args.add_argument(
         "--dataset", type=str, required=True, help="The local dataset in JSON format to get from this computer."

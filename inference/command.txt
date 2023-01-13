@@ -1,0 +1,5 @@
+# This is what I used to run stuff on my prompts
+python ./inference/main_local_datasets.py --output-dir completions-anonymous/ --dataset prompts/humaneval-py-reworded-anonymized.json --model-name codegen-350m --temperature 0.2
+# What I used to run off the normal prompts
+# This is what I used to run stuff on my prompts
+python ./inference/main_local_datasets.py --output-dir completions-regular/ --dataset prompts/humaneval-py-reworded.json --model-name codegen-350m --temperature 0.2
