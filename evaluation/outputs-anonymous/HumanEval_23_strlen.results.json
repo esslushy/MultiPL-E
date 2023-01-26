@@ -1,0 +1,1678 @@
+{
+  "name": "HumanEval_23_strlen",
+  "language": "py",
+  "prompt": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n",
+  "tests": "def check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+  "stop_tokens": [
+    "\ndef",
+    "\n#",
+    "\nif",
+    "\nclass"
+  ],
+  "results": [
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Return length of given string\n    >>> f('')\n    0\n    >>> f('abc')\n    3\n    \"\"\"\n    return len(arg1)\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('x') == 1\n    assert candidate('asdasnakj') == 9\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255435,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    }
+  ]
+}

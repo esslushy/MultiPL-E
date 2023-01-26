@@ -1,0 +1,1678 @@
+{
+  "name": "HumanEval_28_concatenate",
+  "language": "py",
+  "prompt": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n",
+  "tests": "def check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+  "stop_tokens": [
+    "\ndef",
+    "\n#",
+    "\nif",
+    "\nclass"
+  ],
+  "results": [
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> f([])\n    ''\n    >>> f(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(arg1)\n\ndef check(candidate):\n    assert candidate([]) == ''\n    assert candidate(['x', 'y', 'z']) == 'xyz'\n    assert candidate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255441,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    }
+  ]
+}

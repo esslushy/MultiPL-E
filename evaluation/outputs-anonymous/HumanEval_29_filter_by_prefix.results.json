@@ -1,0 +1,1678 @@
+{
+  "name": "HumanEval_29_filter_by_prefix",
+  "language": "py",
+  "prompt": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n",
+  "tests": "def check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+  "stop_tokens": [
+    "\ndef",
+    "\n#",
+    "\nif",
+    "\nclass"
+  ],
+  "results": [
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1[:arg1.find(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpw5c8ak3h.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpw5c8ak3h.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpw5c8ak3h.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmpw5c8ak3h.py\", line 10, in f\n    return arg1[:arg1.find(arg2)]\nAttributeError: 'list' object has no attribute 'find'\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1[:arg1.find(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpw5c8ak3h.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpw5c8ak3h.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpw5c8ak3h.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmpw5c8ak3h.py\", line 10, in f\n    return arg1[:arg1.find(arg2)]\nAttributeError: 'list' object has no attribute 'find'\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1 if arg1.startswith(arg2) else []\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpsy9z59rc.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpsy9z59rc.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpsy9z59rc.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmpsy9z59rc.py\", line 10, in f\n    return arg1 if arg1.startswith(arg2) else []\nAttributeError: 'list' object has no attribute 'startswith'\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1[arg2.startswith(arg1[0])]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp14ccxzc_.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp14ccxzc_.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp14ccxzc_.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmp14ccxzc_.py\", line 10, in f\n    return arg1[arg2.startswith(arg1[0])]\nIndexError: list index out of range\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1[:arg2.find(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp606x3ox9.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp606x3ox9.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp606x3ox9.py\", line 14, in check\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1[:arg2.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpbcr8ufnv.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpbcr8ufnv.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpbcr8ufnv.py\", line 14, in check\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1[:arg1.find(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpw5c8ak3h.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpw5c8ak3h.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpw5c8ak3h.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmpw5c8ak3h.py\", line 10, in f\n    return arg1[:arg1.find(arg2)]\nAttributeError: 'list' object has no attribute 'find'\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1 if arg1.startswith(arg2) else []\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpsy9z59rc.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpsy9z59rc.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpsy9z59rc.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmpsy9z59rc.py\", line 10, in f\n    return arg1 if arg1.startswith(arg2) else []\nAttributeError: 'list' object has no attribute 'startswith'\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1[arg2.startswith(arg1[0])]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp14ccxzc_.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp14ccxzc_.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp14ccxzc_.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmp14ccxzc_.py\", line 10, in f\n    return arg1[arg2.startswith(arg1[0])]\nIndexError: list index out of range\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1[arg2.startswith(arg1[0].lower())]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpj5i40w80.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpj5i40w80.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpj5i40w80.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmpj5i40w80.py\", line 10, in f\n    return arg1[arg2.startswith(arg1[0].lower())]\nIndexError: list index out of range\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1[:arg2.find(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp606x3ox9.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp606x3ox9.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp606x3ox9.py\", line 14, in check\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1 if arg1.startswith(arg2) else []\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpsy9z59rc.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpsy9z59rc.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpsy9z59rc.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmpsy9z59rc.py\", line 10, in f\n    return arg1 if arg1.startswith(arg2) else []\nAttributeError: 'list' object has no attribute 'startswith'\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1[arg2.startswith(arg1[0].lower())]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpj5i40w80.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpj5i40w80.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpj5i40w80.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmpj5i40w80.py\", line 10, in f\n    return arg1[arg2.startswith(arg1[0].lower())]\nIndexError: list index out of range\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1[arg1.find(arg2) + len(arg2):]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp9ybaxlxb.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp9ybaxlxb.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp9ybaxlxb.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmp9ybaxlxb.py\", line 10, in f\n    return arg1[arg1.find(arg2) + len(arg2):]\nAttributeError: 'list' object has no attribute 'find'\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1 if arg1.startswith(arg2) else []\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpsy9z59rc.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpsy9z59rc.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpsy9z59rc.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmpsy9z59rc.py\", line 10, in f\n    return arg1 if arg1.startswith(arg2) else []\nAttributeError: 'list' object has no attribute 'startswith'\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1[arg2.startswith(arg1[0])]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp14ccxzc_.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp14ccxzc_.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp14ccxzc_.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmp14ccxzc_.py\", line 10, in f\n    return arg1[arg2.startswith(arg1[0])]\nIndexError: list index out of range\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1 if arg1[0].startswith(arg2) else []\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpzmw0ptdw.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpzmw0ptdw.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpzmw0ptdw.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmpzmw0ptdw.py\", line 10, in f\n    return arg1 if arg1[0].startswith(arg2) else []\nIndexError: list index out of range\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return arg1[arg2.startswith(arg1[0])]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp14ccxzc_.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp14ccxzc_.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp14ccxzc_.py\", line 13, in check\n    assert candidate([], 'john') == []\n  File \"/tmp/tmp14ccxzc_.py\", line 10, in f\n    return arg1[arg2.startswith(arg1[0])]\nIndexError: list index out of range\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in arg1 if s.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[str], arg2: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> f([], 'a')\n    []\n    >>> f(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [x for x in arg1 if x.startswith(arg2)]\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    }
+  ]
+}

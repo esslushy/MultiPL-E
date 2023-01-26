@@ -1,0 +1,1678 @@
+{
+  "name": "HumanEval_83_starts_one_ends",
+  "language": "py",
+  "prompt": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n",
+  "tests": "def check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+  "stop_tokens": [
+    "\ndef",
+    "\n#",
+    "\nif",
+    "\nclass"
+  ],
+  "results": [
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppuigbv0n.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmppuigbv0n.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmppuigbv0n.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmppuigbv0n.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    elif arg1 > 0:\n        return 1\n    else:\n        return 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8be0ii1b.py\", line 24, in <module>\n    test_check()\n  File \"/tmp/tmp8be0ii1b.py\", line 22, in test_check\n    check(f)\n  File \"/tmp/tmp8be0ii1b.py\", line 16, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr27_bl2m.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr27_bl2m.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr27_bl2m.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxh3roeak.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpxh3roeak.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpxh3roeak.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpxh3roeak.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    elif arg1 == 0:\n        return 1\n    else:\n        return arg1 + 1\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpz_z9t1fq.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmpz_z9t1fq.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmpz_z9t1fq.py\", line 14, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxor6bn4r.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpxor6bn4r.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpxor6bn4r.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpej9cq5er.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpej9cq5er.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpej9cq5er.py\", line 10, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    elif arg1 == 0:\n        return 1\n    else:\n        return arg1 + 1\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpz_z9t1fq.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmpz_z9t1fq.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmpz_z9t1fq.py\", line 14, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    else:\n        return 1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_hke60_l.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmp_hke60_l.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmp_hke60_l.py\", line 12, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr4wxmpqp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr4wxmpqp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr4wxmpqp.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplpcymlfh.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmplpcymlfh.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmplpcymlfh.py\", line 10, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxh3roeak.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpxh3roeak.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpxh3roeak.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpxh3roeak.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr27_bl2m.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr27_bl2m.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr27_bl2m.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr4wxmpqp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr4wxmpqp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr4wxmpqp.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    else:\n        return 1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_hke60_l.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmp_hke60_l.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmp_hke60_l.py\", line 12, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) - 1 if arg1 > 0 else 0\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplsq6x5gl.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmplsq6x5gl.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmplsq6x5gl.py\", line 9, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxor6bn4r.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpxor6bn4r.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpxor6bn4r.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 == 0:\n        return 0\n    elif arg1 < 0:\n        return 0\n    else:\n        return 1\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpalfiqrfg.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmpalfiqrfg.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmpalfiqrfg.py\", line 15, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr4wxmpqp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr4wxmpqp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr4wxmpqp.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxor6bn4r.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpxor6bn4r.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpxor6bn4r.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxh3roeak.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpxh3roeak.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpxh3roeak.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpxh3roeak.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr27_bl2m.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr27_bl2m.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr27_bl2m.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 == 0:\n        return 0\n    else:\n        return 1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplrls4ebw.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmplrls4ebw.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmplrls4ebw.py\", line 13, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    elif arg1 > 0:\n        return 1\n    else:\n        return 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8be0ii1b.py\", line 24, in <module>\n    test_check()\n  File \"/tmp/tmp8be0ii1b.py\", line 22, in test_check\n    check(f)\n  File \"/tmp/tmp8be0ii1b.py\", line 16, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    elif arg1 > 0:\n        return 1\n    else:\n        return 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8be0ii1b.py\", line 24, in <module>\n    test_check()\n  File \"/tmp/tmp8be0ii1b.py\", line 22, in test_check\n    check(f)\n  File \"/tmp/tmp8be0ii1b.py\", line 16, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpyk0lttct.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpyk0lttct.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpyk0lttct.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxh3roeak.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpxh3roeak.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpxh3roeak.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpxh3roeak.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 == 0:\n        return 0\n    elif arg1 == 1:\n        return 1\n    else:\n        return f(arg1-1) + f(arg1-2) + f(arg1-3) + f(arg1-4) + f(arg1-5) + f(arg1-6) + f(arg1-7) + f(arg1-8) + f(arg1-9)\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp9kpwu45v.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp9kpwu45v.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp9kpwu45v.py\", line 15, in check\n    assert candidate(2) == 18\n  File \"/tmp/tmp9kpwu45v.py\", line 11, in f\n    return f(arg1-1) + f(arg1-2) + f(arg1-3) + f(arg1-4) + f(arg1-5) + f(arg1-6) + f(arg1-7) + f(arg1-8) + f(arg1-9)\n  File \"/tmp/tmp9kpwu45v.py\", line 11, in f\n    return f(arg1-1) + f(arg1-2) + f(arg1-3) + f(arg1-4) + f(arg1-5) + f(arg1-6) + f(arg1-7) + f(arg1-8) + f(arg1-9)\n  File \"/tmp/tmp9kpwu45v.py\", line 11, in f\n    return f(arg1-1) + f(arg1-2) + f(arg1-3) + f(arg1-4) + f(arg1-5) + f(arg1-6) + f(arg1-7) + f(arg1-8) + f(arg1-9)\n  [Previous line repeated 993 more times]\n  File \"/tmp/tmp9kpwu45v.py\", line 6, in f\n    if arg1 == 0:\nRecursionError: maximum recursion depth exceeded in comparison\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) - 1\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp9k55mz1p.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp9k55mz1p.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp9k55mz1p.py\", line 9, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr27_bl2m.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr27_bl2m.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr27_bl2m.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppuigbv0n.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmppuigbv0n.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmppuigbv0n.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmppuigbv0n.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr27_bl2m.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr27_bl2m.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr27_bl2m.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    elif arg1 == 0:\n        return 1\n    else:\n        return arg1 + 1\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpz_z9t1fq.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmpz_z9t1fq.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmpz_z9t1fq.py\", line 14, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n + 1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpwm197g9g.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpwm197g9g.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpwm197g9g.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpwm197g9g.py\", line 6, in f\n    return sum(1 for i in range(n + 1))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    else:\n        return 1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_hke60_l.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmp_hke60_l.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmp_hke60_l.py\", line 12, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr27_bl2m.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr27_bl2m.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr27_bl2m.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    if arg1 > 0:\n        return 1\n    return 1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpzyz3b7k1.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmpzyz3b7k1.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmpzyz3b7k1.py\", line 14, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppuigbv0n.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmppuigbv0n.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmppuigbv0n.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmppuigbv0n.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 == 0:\n        return 0\n    else:\n        return 1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplrls4ebw.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmplrls4ebw.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmplrls4ebw.py\", line 13, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr27_bl2m.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr27_bl2m.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr27_bl2m.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxh3roeak.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpxh3roeak.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpxh3roeak.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpxh3roeak.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) - 1\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp9k55mz1p.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp9k55mz1p.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp9k55mz1p.py\", line 9, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 2 == 1\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpzuo3aqw2.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpzuo3aqw2.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpzuo3aqw2.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n + 1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpwm197g9g.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpwm197g9g.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpwm197g9g.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpwm197g9g.py\", line 6, in f\n    return sum(1 for i in range(n + 1))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 == 0:\n        return 0\n    else:\n        return 1 + f(arg1-1)\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5lxwhip4.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmp5lxwhip4.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmp5lxwhip4.py\", line 13, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) - 1 if arg1 > 0 else 0\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpzrsqu822.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpzrsqu822.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpzrsqu822.py\", line 9, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr27_bl2m.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr27_bl2m.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr27_bl2m.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxor6bn4r.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpxor6bn4r.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpxor6bn4r.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    elif arg1 > 0:\n        return 1\n    else:\n        return 1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp2uybx609.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp2uybx609.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp2uybx609.py\", line 15, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) - 1\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpf5caxdsz.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpf5caxdsz.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpf5caxdsz.py\", line 10, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpej9cq5er.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpej9cq5er.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpej9cq5er.py\", line 10, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 10 == 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqc595ke.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmphqc595ke.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmphqc595ke.py\", line 10, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    elif arg1 > 0:\n        return 1\n    else:\n        return 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8be0ii1b.py\", line 24, in <module>\n    test_check()\n  File \"/tmp/tmp8be0ii1b.py\", line 22, in test_check\n    check(f)\n  File \"/tmp/tmp8be0ii1b.py\", line 16, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxh3roeak.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpxh3roeak.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpxh3roeak.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpxh3roeak.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    elif arg1 > 0:\n        return 1\n    else:\n        return 0\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpfijwwyjd.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmpfijwwyjd.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmpfijwwyjd.py\", line 15, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) - 1 if arg1 > 0 else 0\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpzrsqu822.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpzrsqu822.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpzrsqu822.py\", line 9, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr27_bl2m.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr27_bl2m.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr27_bl2m.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) - 1\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpw8lfolp7.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpw8lfolp7.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpw8lfolp7.py\", line 9, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 3 == 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpsstvw4oi.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpsstvw4oi.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpsstvw4oi.py\", line 10, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 3 == 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpsstvw4oi.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpsstvw4oi.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpsstvw4oi.py\", line 10, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr27_bl2m.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr27_bl2m.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr27_bl2m.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr4wxmpqp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr4wxmpqp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr4wxmpqp.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr27_bl2m.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr27_bl2m.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr27_bl2m.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxh3roeak.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpxh3roeak.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpxh3roeak.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpxh3roeak.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 3 == 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpsstvw4oi.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpsstvw4oi.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpsstvw4oi.py\", line 10, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    elif arg1 > 0:\n        return 1\n    else:\n        return 0\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpfijwwyjd.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmpfijwwyjd.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmpfijwwyjd.py\", line 15, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxor6bn4r.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpxor6bn4r.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpxor6bn4r.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxor6bn4r.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpxor6bn4r.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpxor6bn4r.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 3 == 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpsstvw4oi.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpsstvw4oi.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpsstvw4oi.py\", line 10, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppuigbv0n.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmppuigbv0n.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmppuigbv0n.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmppuigbv0n.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 2 == 0\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpfo7flzn1.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpfo7flzn1.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpfo7flzn1.py\", line 9, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 2 == 1\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1ip38z2r.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp1ip38z2r.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp1ip38z2r.py\", line 11, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr4wxmpqp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr4wxmpqp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr4wxmpqp.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 2 == 1\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpzuo3aqw2.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpzuo3aqw2.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpzuo3aqw2.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    elif arg1 > 0:\n        return 1\n    else:\n        return 0\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpfijwwyjd.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmpfijwwyjd.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmpfijwwyjd.py\", line 15, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) - 1 if arg1 > 0 else 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvnlrrxpb.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpvnlrrxpb.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpvnlrrxpb.py\", line 10, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxh3roeak.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpxh3roeak.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpxh3roeak.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpxh3roeak.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 2 == 0\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcc598e7h.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpcc598e7h.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpcc598e7h.py\", line 9, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppuigbv0n.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmppuigbv0n.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmppuigbv0n.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmppuigbv0n.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 2 == 1\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpzuo3aqw2.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpzuo3aqw2.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpzuo3aqw2.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr4wxmpqp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr4wxmpqp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr4wxmpqp.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 2 == 1\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpzuo3aqw2.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpzuo3aqw2.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpzuo3aqw2.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 2 == 0\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcc598e7h.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpcc598e7h.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpcc598e7h.py\", line 9, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 3 == 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpsstvw4oi.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpsstvw4oi.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpsstvw4oi.py\", line 10, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppuigbv0n.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmppuigbv0n.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmppuigbv0n.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmppuigbv0n.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 2 == 1\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpzuo3aqw2.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpzuo3aqw2.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpzuo3aqw2.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) - 1\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp9k55mz1p.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp9k55mz1p.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp9k55mz1p.py\", line 9, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxh3roeak.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpxh3roeak.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpxh3roeak.py\", line 10, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpxh3roeak.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(arg1))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr27_bl2m.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr27_bl2m.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr27_bl2m.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return int(arg1) % 10\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7ccgebpa.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7ccgebpa.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7ccgebpa.py\", line 10, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return len(str(arg1)) % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplpcymlfh.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmplpcymlfh.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmplpcymlfh.py\", line 10, in check\n    assert candidate(1) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpb3vxjcm5.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpb3vxjcm5.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpb3vxjcm5.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpb3vxjcm5.py\", line 6, in f\n    return sum(1 for i in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    elif arg1 > 0:\n        return 1\n    else:\n        return 0\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8be0ii1b.py\", line 24, in <module>\n    test_check()\n  File \"/tmp/tmp8be0ii1b.py\", line 22, in test_check\n    check(f)\n  File \"/tmp/tmp8be0ii1b.py\", line 16, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    elif arg1 > 0:\n        return 1\n    else:\n        return 0\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpfijwwyjd.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmpfijwwyjd.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmpfijwwyjd.py\", line 15, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for _ in range(n))\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpidgvusuy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpidgvusuy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpidgvusuy.py\", line 9, in check\n    assert candidate(1) == 1\n  File \"/tmp/tmpidgvusuy.py\", line 6, in f\n    return sum(1 for _ in range(n))\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    return sum(1 for i in range(arg1))\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255510,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp2kz3k37z.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp2kz3k37z.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp2kz3k37z.py\", line 11, in check\n    assert candidate(2) == 18\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    }
+  ]
+}

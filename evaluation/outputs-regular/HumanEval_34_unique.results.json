@@ -1,0 +1,1678 @@
+{
+  "name": "HumanEval_34_unique",
+  "language": "py",
+  "prompt": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n",
+  "tests": "def check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+  "stop_tokens": [
+    "\ndef",
+    "\n#",
+    "\nif",
+    "\nclass"
+  ],
+  "results": [
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplnx3tsyg.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmplnx3tsyg.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmplnx3tsyg.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [i for i, j in enumerate(l) if j not in l]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpme8lwgo7.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpme8lwgo7.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpme8lwgo7.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(l)\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxoljpzpo.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxoljpzpo.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxoljpzpo.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [i for i, x in enumerate(l) if x not in l]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpa65hr77d.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpa65hr77d.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpa65hr77d.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(l)\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxoljpzpo.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxoljpzpo.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxoljpzpo.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpmeqc0co8.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplnx3tsyg.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmplnx3tsyg.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmplnx3tsyg.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(l)\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxoljpzpo.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxoljpzpo.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxoljpzpo.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplnx3tsyg.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmplnx3tsyg.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmplnx3tsyg.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpmeqc0co8.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplnx3tsyg.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmplnx3tsyg.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmplnx3tsyg.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpmeqc0co8.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [i for i, x in enumerate(l) if x not in (i, x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxae34t3f.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxae34t3f.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxae34t3f.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpmeqc0co8.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpmeqc0co8.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(l)\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxoljpzpo.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxoljpzpo.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxoljpzpo.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplnx3tsyg.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmplnx3tsyg.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmplnx3tsyg.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpmeqc0co8.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(l)\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxoljpzpo.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxoljpzpo.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxoljpzpo.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplnx3tsyg.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmplnx3tsyg.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmplnx3tsyg.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(l)\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxoljpzpo.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxoljpzpo.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxoljpzpo.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpmeqc0co8.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(l)\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxoljpzpo.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxoljpzpo.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxoljpzpo.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(l)\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxoljpzpo.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxoljpzpo.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxoljpzpo.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplnx3tsyg.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmplnx3tsyg.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmplnx3tsyg.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpmeqc0co8.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpmeqc0co8.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpmeqc0co8.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(l)\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxoljpzpo.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxoljpzpo.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxoljpzpo.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplnx3tsyg.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmplnx3tsyg.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmplnx3tsyg.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(l)\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxoljpzpo.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxoljpzpo.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxoljpzpo.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [i for i, j in enumerate(l) if j not in l]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpme8lwgo7.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpme8lwgo7.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpme8lwgo7.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(l)\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxoljpzpo.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxoljpzpo.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxoljpzpo.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpmeqc0co8.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmplnx3tsyg.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmplnx3tsyg.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmplnx3tsyg.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpmeqc0co8.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [i for i, j in enumerate(l) if j not in l]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpme8lwgo7.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpme8lwgo7.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpme8lwgo7.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(l)\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxoljpzpo.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxoljpzpo.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxoljpzpo.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpmeqc0co8.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y == x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(l)\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxoljpzpo.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxoljpzpo.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpxoljpzpo.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    seen = set()\n    return [x for x in l if x not in seen and not seen.add(x)]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmppg3ahfgx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmppg3ahfgx.py\", line 15, in test_check\n    check(unique)\n  File \"/tmp/tmppg3ahfgx.py\", line 12, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x for x in l if x != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi7kpa6m2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpi7kpa6m2.py\", line 14, in test_check\n    check(unique)\n  File \"/tmp/tmpi7kpa6m2.py\", line 11, in check\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "from typing import List\n\ndef unique(l: List[int]) -> List[int]:\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n\ndef check(candidate):\n    assert candidate([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [0, 2, 3, 5, 9, 123]\n\ndef test_check():\n    check(unique)\n\ntest_check()\n",
+      "timestamp": 1673628620,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp50zhq9un.py\", line 8\n    return [x for x in l if x not in [x, y for y in l if y != x]]\n                                      ^^^^\nSyntaxError: did you forget parentheses around the comprehension target?\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    }
+  ]
+}

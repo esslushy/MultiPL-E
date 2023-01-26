@@ -1,0 +1,1678 @@
+{
+  "name": "HumanEval_24_largest_divisor",
+  "language": "py",
+  "prompt": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n",
+  "tests": "def check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+  "stop_tokens": [
+    "\ndef",
+    "\n#",
+    "\nif",
+    "\nclass"
+  ],
+  "results": [
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup46vwvy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpup46vwvy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpup46vwvy.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpup46vwvy.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup1f5opd.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpup1f5opd.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpup1f5opd.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup1f5opd.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpup1f5opd.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpup1f5opd.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1, 0)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpk2h2ovxp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpk2h2ovxp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpk2h2ovxp.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup46vwvy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpup46vwvy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpup46vwvy.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpup46vwvy.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 % 3 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmprpnq9l1_.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmprpnq9l1_.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmprpnq9l1_.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 % 3 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmprpnq9l1_.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmprpnq9l1_.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmprpnq9l1_.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup46vwvy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpup46vwvy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpup46vwvy.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpup46vwvy.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp53j8hewk.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp53j8hewk.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp53j8hewk.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp53j8hewk.py\", line 6, in f\n    return int(arg1) // int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(f(arg1), arg1)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpicli1hmz.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpicli1hmz.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpicli1hmz.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpicli1hmz.py\", line 6, in f\n    return max(f(arg1), arg1)\n  File \"/tmp/tmpicli1hmz.py\", line 6, in f\n    return max(f(arg1), arg1)\n  File \"/tmp/tmpicli1hmz.py\", line 6, in f\n    return max(f(arg1), arg1)\n  [Previous line repeated 994 more times]\nRecursionError: maximum recursion depth exceeded\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 % 3 == 0 and arg1 % 5 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7mwnu25i.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp7mwnu25i.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp7mwnu25i.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup1f5opd.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpup1f5opd.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpup1f5opd.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp53j8hewk.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp53j8hewk.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp53j8hewk.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp53j8hewk.py\", line 6, in f\n    return int(arg1) // int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcncpyifk.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpcncpyifk.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpcncpyifk.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpcncpyifk.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 % 3 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmprpnq9l1_.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmprpnq9l1_.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmprpnq9l1_.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8w6ccwlx.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8w6ccwlx.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8w6ccwlx.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup1f5opd.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpup1f5opd.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpup1f5opd.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - 1)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpx2jg1ao5.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpx2jg1ao5.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpx2jg1ao5.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpx2jg1ao5.py\", line 6, in f\n    return arg1 // (n - 1)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup46vwvy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpup46vwvy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpup46vwvy.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpup46vwvy.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcncpyifk.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpcncpyifk.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpcncpyifk.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpcncpyifk.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8w6ccwlx.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8w6ccwlx.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8w6ccwlx.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8w6ccwlx.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8w6ccwlx.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8w6ccwlx.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1, 0)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpqj1kcb0r.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpqj1kcb0r.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpqj1kcb0r.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcncpyifk.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpcncpyifk.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpcncpyifk.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpcncpyifk.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1, 0)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpqj1kcb0r.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpqj1kcb0r.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpqj1kcb0r.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup46vwvy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpup46vwvy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpup46vwvy.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpup46vwvy.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup46vwvy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpup46vwvy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpup46vwvy.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpup46vwvy.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpj_e6rmp4.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpj_e6rmp4.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpj_e6rmp4.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpj_e6rmp4.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup1f5opd.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpup1f5opd.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpup1f5opd.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp53j8hewk.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp53j8hewk.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp53j8hewk.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp53j8hewk.py\", line 6, in f\n    return int(arg1) // int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255437,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpii2fiigb.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpii2fiigb.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpii2fiigb.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1)",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup46vwvy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpup46vwvy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpup46vwvy.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpup46vwvy.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup1f5opd.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpup1f5opd.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpup1f5opd.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 % 3 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmprpnq9l1_.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmprpnq9l1_.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmprpnq9l1_.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup1f5opd.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpup1f5opd.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpup1f5opd.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup1f5opd.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpup1f5opd.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpup1f5opd.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8w6ccwlx.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8w6ccwlx.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8w6ccwlx.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 % 3 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpn_vvl950.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpn_vvl950.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpn_vvl950.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup1f5opd.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpup1f5opd.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpup1f5opd.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1, 0) // arg1\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8v4xelkq.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8v4xelkq.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8v4xelkq.py\", line 11, in check\n    assert candidate(10) == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpj_e6rmp4.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpj_e6rmp4.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpj_e6rmp4.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpj_e6rmp4.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n) * int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpupepr3qj.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpupepr3qj.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpupepr3qj.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpupepr3qj.py\", line 6, in f\n    return int(arg1) // int(n) * int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3njcc4xb.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3njcc4xb.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3njcc4xb.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp3njcc4xb.py\", line 6, in f\n    return int(arg1) // int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup1f5opd.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpup1f5opd.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpup1f5opd.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8w6ccwlx.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8w6ccwlx.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8w6ccwlx.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n) * int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpupepr3qj.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpupepr3qj.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpupepr3qj.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpupepr3qj.py\", line 6, in f\n    return int(arg1) // int(n) * int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpj_e6rmp4.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpj_e6rmp4.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpj_e6rmp4.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpj_e6rmp4.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - 1)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpx2jg1ao5.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpx2jg1ao5.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpx2jg1ao5.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpx2jg1ao5.py\", line 6, in f\n    return arg1 // (n - 1)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 % 3 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmprpnq9l1_.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmprpnq9l1_.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmprpnq9l1_.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 % 3 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpn_vvl950.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpn_vvl950.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpn_vvl950.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8w6ccwlx.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8w6ccwlx.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8w6ccwlx.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8w6ccwlx.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8w6ccwlx.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8w6ccwlx.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup46vwvy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpup46vwvy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpup46vwvy.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpup46vwvy.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup1f5opd.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpup1f5opd.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpup1f5opd.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n) * int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpupepr3qj.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpupepr3qj.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpupepr3qj.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpupepr3qj.py\", line 6, in f\n    return int(arg1) // int(n) * int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n) * int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpupepr3qj.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpupepr3qj.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpupepr3qj.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpupepr3qj.py\", line 6, in f\n    return int(arg1) // int(n) * int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpj_e6rmp4.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpj_e6rmp4.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpj_e6rmp4.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpj_e6rmp4.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup46vwvy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpup46vwvy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpup46vwvy.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpup46vwvy.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup1f5opd.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpup1f5opd.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpup1f5opd.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup46vwvy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpup46vwvy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpup46vwvy.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpup46vwvy.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp53j8hewk.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp53j8hewk.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp53j8hewk.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp53j8hewk.py\", line 6, in f\n    return int(arg1) // int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp53j8hewk.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp53j8hewk.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp53j8hewk.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp53j8hewk.py\", line 6, in f\n    return int(arg1) // int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8w6ccwlx.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8w6ccwlx.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8w6ccwlx.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp53j8hewk.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp53j8hewk.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp53j8hewk.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp53j8hewk.py\", line 6, in f\n    return int(arg1) // int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8w6ccwlx.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8w6ccwlx.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8w6ccwlx.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 % 3 == 0 and arg1 % 5 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpula3w8dq.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpula3w8dq.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpula3w8dq.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - 1)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpx2jg1ao5.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpx2jg1ao5.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpx2jg1ao5.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpx2jg1ao5.py\", line 6, in f\n    return arg1 // (n - 1)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp53j8hewk.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp53j8hewk.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp53j8hewk.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp53j8hewk.py\", line 6, in f\n    return int(arg1) // int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcncpyifk.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpcncpyifk.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpcncpyifk.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpcncpyifk.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - 1)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_daitho1.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp_daitho1.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp_daitho1.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp_daitho1.py\", line 6, in f\n    return arg1 // (n - 1)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8w6ccwlx.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8w6ccwlx.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8w6ccwlx.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpup46vwvy.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpup46vwvy.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpup46vwvy.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpup46vwvy.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - 1)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_daitho1.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp_daitho1.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp_daitho1.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp_daitho1.py\", line 6, in f\n    return arg1 // (n - 1)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpj_e6rmp4.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpj_e6rmp4.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpj_e6rmp4.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpj_e6rmp4.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpj_e6rmp4.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpj_e6rmp4.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpj_e6rmp4.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpj_e6rmp4.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8w6ccwlx.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8w6ccwlx.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8w6ccwlx.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(arg1 // n, n)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpj_e6rmp4.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmpj_e6rmp4.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmpj_e6rmp4.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpj_e6rmp4.py\", line 6, in f\n    return max(arg1 // n, n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255437,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpii2fiigb.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpii2fiigb.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpii2fiigb.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in f\n    return max(f(arg1) for arg1 in range(1, arg1 + 1))\n  File \"/tmp/tmpii2fiigb.py\", line 6, in <genexpr>\n    return max(f(arg1)",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n)\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3njcc4xb.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3njcc4xb.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3njcc4xb.py\", line 10, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp3njcc4xb.py\", line 6, in f\n    return int(arg1) // int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - 1)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_daitho1.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp_daitho1.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp_daitho1.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp_daitho1.py\", line 6, in f\n    return arg1 // (n - 1)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8w6ccwlx.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8w6ccwlx.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8w6ccwlx.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8w6ccwlx.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp8w6ccwlx.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp8w6ccwlx.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0 and arg1 // 2 == 0\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3swjxpe8.py\", line 19, in <module>\n    test_check()\n  File \"/tmp/tmp3swjxpe8.py\", line 17, in test_check\n    check(f)\n  File \"/tmp/tmp3swjxpe8.py\", line 10, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) % int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0524_wp0.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp0524_wp0.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp0524_wp0.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp0524_wp0.py\", line 6, in f\n    return int(arg1) % int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 // (n - arg1 % n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr88aqlwp.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpr88aqlwp.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpr88aqlwp.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmpr88aqlwp.py\", line 6, in f\n    return arg1 // (n - arg1 % n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return int(arg1) // int(n)\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp53j8hewk.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmp53j8hewk.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmp53j8hewk.py\", line 9, in check\n    assert candidate(3) == 1\n  File \"/tmp/tmp53j8hewk.py\", line 6, in f\n    return int(arg1) // int(n)\nNameError: name 'n' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> f(15)\n    5\n    \"\"\"\n    return arg1 % 2 == 0\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255436,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjdtshfze.py\", line 18, in <module>\n    test_check()\n  File \"/tmp/tmpjdtshfze.py\", line 16, in test_check\n    check(f)\n  File \"/tmp/tmpjdtshfze.py\", line 9, in check\n    assert candidate(3) == 1\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    }
+  ]
+}

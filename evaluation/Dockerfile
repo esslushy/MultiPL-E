@@ -28,11 +28,11 @@ RUN apt-get -y --allow-unauthenticated install --reinstall d-apt-keyring
 RUN apt-get update && apt-get install -yqq dmd-compiler dub
 
 # C#
-RUN apt install gnupg ca-certificates
-RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-RUN echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | tee /etc/apt/sources.list.d/mono-official-stable.list
-RUN apt update
-RUN apt install -yqq mono-devel
+# RUN apt install gnupg ca-certificates
+# RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+# RUN echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | tee /etc/apt/sources.list.d/mono-official-stable.list
+# RUN apt update
+# RUN apt install -yqq mono-devel
 
 # Post-processing
 

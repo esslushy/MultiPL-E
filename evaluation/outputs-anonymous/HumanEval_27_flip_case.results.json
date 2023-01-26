@@ -1,0 +1,1678 @@
+{
+  "name": "HumanEval_27_flip_case",
+  "language": "py",
+  "prompt": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n",
+  "tests": "def check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+  "stop_tokens": [
+    "\ndef",
+    "\n#",
+    "\nif",
+    "\nclass"
+  ],
+  "results": [
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join([c for c in arg1 if c.islower() or c.isupper()])\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpnin6m2ty.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpnin6m2ty.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpnin6m2ty.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpfhpx3k5y.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpfhpx3k5y.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpfhpx3k5y.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower().replace(' ', '-')\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpf920qmrm.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpf920qmrm.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpf920qmrm.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join([c for c in arg1 if c.islower() or c.isupper()])\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxn9_dcpr.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxn9_dcpr.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpxn9_dcpr.py\", line 10, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(chr(ord(c) ^ ord(c)) for c in arg1)\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmzb5mjfd.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpmzb5mjfd.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpmzb5mjfd.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(chr(ord(c) ^ ord(c)) for c in arg1)\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmzb5mjfd.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpmzb5mjfd.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpmzb5mjfd.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpfhpx3k5y.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpfhpx3k5y.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpfhpx3k5y.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join([c.upper() if c.isupper() else c for c in arg1.lower()])\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpsdtddzyr.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpsdtddzyr.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpsdtddzyr.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join([c for c in arg1 if c.islower() or c.isupper()])\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpnin6m2ty.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpnin6m2ty.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpnin6m2ty.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower().replace(' ', '-')\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpf920qmrm.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpf920qmrm.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpf920qmrm.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(chr(ord(c) ^ ord(c)) for c in arg1)\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmzb5mjfd.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpmzb5mjfd.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpmzb5mjfd.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower().replace(' ', '-')\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpf920qmrm.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpf920qmrm.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpf920qmrm.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join([c for c in arg1 if c.islower() or c.isupper()])\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpnin6m2ty.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpnin6m2ty.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpnin6m2ty.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower().replace(' ', '-')\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpf920qmrm.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpf920qmrm.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpf920qmrm.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpfhpx3k5y.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpfhpx3k5y.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpfhpx3k5y.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3mpizbp7.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp3mpizbp7.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp3mpizbp7.py\", line 10, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join([c for c in arg1 if c.islower() or c.isupper()])\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpnin6m2ty.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpnin6m2ty.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpnin6m2ty.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower().replace(' ', '_').replace('-', '_').replace(' ', '_').replace('-', '_')\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr9bpuzud.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpr9bpuzud.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpr9bpuzud.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join([c for c in arg1 if c.islower() or c.isupper()])\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpnin6m2ty.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpnin6m2ty.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpnin6m2ty.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp3mpizbp7.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp3mpizbp7.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp3mpizbp7.py\", line 10, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower())\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxz5nv1u2.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpxz5nv1u2.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpxz5nv1u2.py\", line 10, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join([c for c in arg1 if c.islower() or c.isupper()])\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpnin6m2ty.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpnin6m2ty.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpnin6m2ty.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower().replace(' ', '_').replace('-', '_').replace(' ', '_').replace('-', '_')\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr9bpuzud.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpr9bpuzud.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpr9bpuzud.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower().replace(' ', '-')\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpf920qmrm.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpf920qmrm.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpf920qmrm.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower().replace(' ', '-')\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpf920qmrm.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpf920qmrm.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpf920qmrm.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower().replace(' ', '-')\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpf920qmrm.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpf920qmrm.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpf920qmrm.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(chr(ord(c) ^ ord(c)) for c in arg1)\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmzb5mjfd.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpmzb5mjfd.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpmzb5mjfd.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower().replace(' ', '-')\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpf920qmrm.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpf920qmrm.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpf920qmrm.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower().replace(' ', '_').replace('-', '_').replace(' ', '_')\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp6w5k2z1c.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp6w5k2z1c.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp6w5k2z1c.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(chr(ord(c) ^ ord(c)) for c in arg1)\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmzb5mjfd.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpmzb5mjfd.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpmzb5mjfd.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join([c for c in arg1 if c.islower() or c.isupper()])\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpnin6m2ty.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpnin6m2ty.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpnin6m2ty.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower().replace(' ', '_').replace('-', '_').replace('.', '_').lower()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp73vnvztr.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp73vnvztr.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp73vnvztr.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join([c for c in arg1 if c.islower() or c.isupper()])\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpnin6m2ty.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpnin6m2ty.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpnin6m2ty.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return ''.join(c for c in arg1 if c.islower() or c.isupper())\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1s49ljyi.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp1s49ljyi.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp1s49ljyi.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower().replace(' ', '_').replace('-', '_').replace('.', '_').replace(' ', '_')\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgncwnckf.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpgncwnckf.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpgncwnckf.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> f('Hello')\n    'hELLO'\n    \"\"\"\n    return arg1.lower() + arg1.upper()\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255440,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpi6z09hwv.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpi6z09hwv.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpi6z09hwv.py\", line 11, in check\n    assert candidate('Hello!') == 'hELLO!'\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    }
+  ]
+}

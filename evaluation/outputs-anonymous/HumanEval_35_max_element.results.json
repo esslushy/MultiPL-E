@@ -1,0 +1,1678 @@
+{
+  "name": "HumanEval_35_max_element",
+  "language": "py",
+  "prompt": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n",
+  "tests": "def check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+  "stop_tokens": [
+    "\ndef",
+    "\n#",
+    "\nif",
+    "\nclass"
+  ],
+  "results": [
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "from typing import List\n\ndef f(arg1: List[int]) -> int:\n    \"\"\"Return maximum element in the list.\n    >>> f([1, 2, 3])\n    3\n    >>> f([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(arg1)\n\ndef check(candidate):\n    assert candidate([1, 2, 3]) == 3\n    assert candidate([5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10]) == 124\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255448,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    }
+  ]
+}

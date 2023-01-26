@@ -1,0 +1,4 @@
+# Anonymized stuff
+docker run --rm --network none --volume "C:/Users/Claire Schlesinger/Desktop/MultiPL-E/completions-anonymous":/inputs:ro --volume "C:/Users/Claire Schlesinger/Desktop/MultiPL-E/evaluation/outputs-anonymous":/outputs:rw multipl-e-evaluation --dir /inputs --output-dir /outputs --testing
+# Normal stuff
+docker run --rm --network none --volume "C:/Users/Claire Schlesinger/Desktop/MultiPL-E/completions-regular":/inputs:ro --volume "C:/Users/Claire Schlesinger/Desktop/MultiPL-E/evaluation/outputs-regular":/outputs:rw multipl-e-evaluation --dir /inputs --output-dir /outputs --testing

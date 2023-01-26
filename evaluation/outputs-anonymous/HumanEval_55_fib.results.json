@@ -1,0 +1,1678 @@
+{
+  "name": "HumanEval_55_fib",
+  "language": "py",
+  "prompt": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n",
+  "tests": "def check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+  "stop_tokens": [
+    "\ndef",
+    "\n#",
+    "\nif",
+    "\nclass"
+  ],
+  "results": [
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError('arg1 must be >= 0')\n    if arg1 == 0:\n        return 1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return arg1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpd9edi3qa.py\", line 29, in <module>\n    test_check()\n  File \"/tmp/tmpd9edi3qa.py\", line 27, in test_check\n    check(f)\n  File \"/tmp/tmpd9edi3qa.py\", line 22, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"f() takes positive argument\")\n    if arg1 == 0:\n        return arg1\n    return arg1 + f(arg1 - 1)\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp2q39q2bh.py\", line 27, in <module>\n    test_check()\n  File \"/tmp/tmp2q39q2bh.py\", line 25, in test_check\n    check(f)\n  File \"/tmp/tmp2q39q2bh.py\", line 20, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"f() argument must be non-negative\")\n    if arg1 == 0:\n        return 1\n    if arg1 == 1:\n        return arg1\n    return arg1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0eydodub.py\", line 28, in <module>\n    test_check()\n  File \"/tmp/tmp0eydodub.py\", line 26, in test_check\n    check(f)\n  File \"/tmp/tmp0eydodub.py\", line 21, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"arg1 must be >= 0\")\n    if arg1 == 0:\n        return 1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return arg1 + f(arg1)\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpf1i42ggy.py\", line 30, in <module>\n    test_check()\n  File \"/tmp/tmpf1i42ggy.py\", line 28, in test_check\n    check(f)\n  File \"/tmp/tmpf1i42ggy.py\", line 21, in check\n    assert candidate(10) == 55\n  File \"/tmp/tmpf1i42ggy.py\", line 17, in f\n    return arg1 + f(arg1)\n  File \"/tmp/tmpf1i42ggy.py\", line 17, in f\n    return arg1 + f(arg1)\n  File \"/tmp/tmpf1i42ggy.py\", line 17, in f\n    return arg1 + f(arg1)\n  [Previous line repeated 993 more times]\n  File \"/tmp/tmpf1i42ggy.py\", line 10, in f\n    if arg1 < 0:\nRecursionError: maximum recursion depth exceeded in comparison\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError('f(arg1) must be non-negative')\n    if arg1 == 0:\n        return arg1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return arg1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpy1d6z52b.py\", line 29, in <module>\n    test_check()\n  File \"/tmp/tmpy1d6z52b.py\", line 27, in test_check\n    check(f)\n  File \"/tmp/tmpy1d6z52b.py\", line 22, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"argument 1 must be non-negative\")\n    if arg1 == 0:\n        return 1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return arg1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp1neertlc.py\", line 29, in <module>\n    test_check()\n  File \"/tmp/tmp1neertlc.py\", line 27, in test_check\n    check(f)\n  File \"/tmp/tmp1neertlc.py\", line 22, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        return arg1\n    elif arg1 == 0:\n        return 1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return arg1 + f(arg1 - 1)\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8ksh36yf.py\", line 30, in <module>\n    test_check()\n  File \"/tmp/tmp8ksh36yf.py\", line 28, in test_check\n    check(f)\n  File \"/tmp/tmp8ksh36yf.py\", line 23, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"argument must be non-negative\")\n    if arg1 == 0:\n        return arg1\n    if arg1 == 1:\n        return arg1\n    return arg1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp7j8xqj3n.py\", line 28, in <module>\n    test_check()\n  File \"/tmp/tmp7j8xqj3n.py\", line 26, in test_check\n    check(f)\n  File \"/tmp/tmp7j8xqj3n.py\", line 21, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"f() argument must be non-negative\")\n    if arg1 == 0:\n        return 1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return arg1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpr6i8ftbg.py\", line 29, in <module>\n    test_check()\n  File \"/tmp/tmpr6i8ftbg.py\", line 27, in test_check\n    check(f)\n  File \"/tmp/tmpr6i8ftbg.py\", line 22, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        return arg1\n    elif arg1 == 0:\n        return arg1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return f(arg1 - 1) + f(arg1)\n<|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              \ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpswd17187.py\", line 18\n    <|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"f(arg1) must be non-negative\")\n    if arg1 == 0:\n        return arg1\n    if arg1 == 1:\n        return arg1\n    if arg1 == 2:\n        return arg1\n    return arg1 + f(arg1 - 1)\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp2b6e1x10.py\", line 31, in <module>\n    test_check()\n  File \"/tmp/tmp2b6e1x10.py\", line 29, in test_check\n    check(f)\n  File \"/tmp/tmp2b6e1x10.py\", line 22, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"f() argument must be non-negative\")\n    if arg1 == 0:\n        return arg1\n    return arg1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp6bzfrt22.py\", line 26, in <module>\n    test_check()\n  File \"/tmp/tmp6bzfrt22.py\", line 24, in test_check\n    check(f)\n  File \"/tmp/tmp6bzfrt22.py\", line 19, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 == 0:\n        return arg1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return f(arg1 - 1) + f(arg1)\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpe8tuwcqf.py\", line 28, in <module>\n    test_check()\n  File \"/tmp/tmpe8tuwcqf.py\", line 26, in test_check\n    check(f)\n  File \"/tmp/tmpe8tuwcqf.py\", line 19, in check\n    assert candidate(10) == 55\n  File \"/tmp/tmpe8tuwcqf.py\", line 15, in f\n    return f(arg1 - 1) + f(arg1)\n  File \"/tmp/tmpe8tuwcqf.py\", line 15, in f\n    return f(arg1 - 1) + f(arg1)\n  File \"/tmp/tmpe8tuwcqf.py\", line 15, in f\n    return f(arg1 - 1) + f(arg1)\n  [Previous line repeated 993 more times]\n  File \"/tmp/tmpe8tuwcqf.py\", line 10, in f\n    if arg1 == 0:\nRecursionError: maximum recursion depth exceeded in comparison\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"Negative argument.\")\n    if arg1 == 0:\n        return 1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return arg1 + f(arg1)\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_575_xsp.py\", line 30, in <module>\n    test_check()\n  File \"/tmp/tmp_575_xsp.py\", line 28, in test_check\n    check(f)\n  File \"/tmp/tmp_575_xsp.py\", line 21, in check\n    assert candidate(10) == 55\n  File \"/tmp/tmp_575_xsp.py\", line 17, in f\n    return arg1 + f(arg1)\n  File \"/tmp/tmp_575_xsp.py\", line 17, in f\n    return arg1 + f(arg1)\n  File \"/tmp/tmp_575_xsp.py\", line 17, in f\n    return arg1 + f(arg1)\n  [Previous line repeated 993 more times]\n  File \"/tmp/tmp_575_xsp.py\", line 10, in f\n    if arg1 < 0:\nRecursionError: maximum recursion depth exceeded in comparison\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"argument 1 must be >= 0\")\n    if arg1 == 0:\n        return arg1\n    if arg1 == 1:\n        return arg1\n    return arg1 + f(arg1 - 1)\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcc8gymad.py\", line 29, in <module>\n    test_check()\n  File \"/tmp/tmpcc8gymad.py\", line 27, in test_check\n    check(f)\n  File \"/tmp/tmpcc8gymad.py\", line 22, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"f(arg1) must be >= 0\")\n    if arg1 == 0:\n        return 1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return arg1 + f(arg1 - 1)\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_nts5_mn.py\", line 30, in <module>\n    test_check()\n  File \"/tmp/tmp_nts5_mn.py\", line 28, in test_check\n    check(f)\n  File \"/tmp/tmp_nts5_mn.py\", line 23, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"Negative argument.\")\n    if arg1 == 0:\n        return arg1\n    if arg1 == 1:\n        return arg1\n    if arg1 == arg1:\n        return arg1\n    if arg1 > arg1:\n        return f(arg1 - 1)\n    return f(arg1 - 1) + f(arg1 - arg1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpyt46jj85.py\", line 32, in <module>\n    test_check()\n  File \"/tmp/tmpyt46jj85.py\", line 30, in test_check\n    check(f)\n  File \"/tmp/tmpyt46jj85.py\", line 23, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError('f() takes positive argument')\n    if arg1 == 0:\n        return 1\n    if arg1 == 1:\n        return arg1\n    return arg1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpwxmay8d0.py\", line 28, in <module>\n    test_check()\n  File \"/tmp/tmpwxmay8d0.py\", line 26, in test_check\n    check(f)\n  File \"/tmp/tmpwxmay8d0.py\", line 21, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 == 0:\n        return 1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return arg1 + f(arg1)\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpt2nvpgg4.py\", line 28, in <module>\n    test_check()\n  File \"/tmp/tmpt2nvpgg4.py\", line 26, in test_check\n    check(f)\n  File \"/tmp/tmpt2nvpgg4.py\", line 19, in check\n    assert candidate(10) == 55\n  File \"/tmp/tmpt2nvpgg4.py\", line 15, in f\n    return arg1 + f(arg1)\n  File \"/tmp/tmpt2nvpgg4.py\", line 15, in f\n    return arg1 + f(arg1)\n  File \"/tmp/tmpt2nvpgg4.py\", line 15, in f\n    return arg1 + f(arg1)\n  [Previous line repeated 993 more times]\n  File \"/tmp/tmpt2nvpgg4.py\", line 10, in f\n    if arg1 == 0:\nRecursionError: maximum recursion depth exceeded in comparison\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError('f(arg1) must be >= 0')\n    if arg1 == 0:\n        return 1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return arg1 + f(arg1 - 1)\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpowj7bs4z.py\", line 30, in <module>\n    test_check()\n  File \"/tmp/tmpowj7bs4z.py\", line 28, in test_check\n    check(f)\n  File \"/tmp/tmpowj7bs4z.py\", line 23, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError('arg1 must be >= 0')\n    if arg1 == 0:\n        return arg1\n    if arg1 == 1:\n        return arg1\n    return arg1 + f(arg1 - 1)\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp2jx09z12.py\", line 29, in <module>\n    test_check()\n  File \"/tmp/tmp2jx09z12.py\", line 27, in test_check\n    check(f)\n  File \"/tmp/tmp2jx09z12.py\", line 22, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"f(arg1) must be non-negative\")\n    if arg1 == 0:\n        return arg1\n    if arg1 == 1:\n        return arg1\n    return arg1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpoezcttjk.py\", line 28, in <module>\n    test_check()\n  File \"/tmp/tmpoezcttjk.py\", line 26, in test_check\n    check(f)\n  File \"/tmp/tmpoezcttjk.py\", line 21, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"f() argument must be non-negative\")\n    if arg1 == 0:\n        return 1\n    elif arg1 == 1:\n        return arg1\n    elif arg1 == arg1:\n        return arg1\n    else:\n        return arg1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpac94k5pw.py\", line 31, in <module>\n    test_check()\n  File \"/tmp/tmpac94k5pw.py\", line 29, in test_check\n    check(f)\n  File \"/tmp/tmpac94k5pw.py\", line 22, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"f(arg1) must be >= 0\")\n    if arg1 == 0:\n        return 1\n    elif arg1 == 1:\n        return arg1\n    elif arg1 > 1:\n        return f(arg1 - 1)\n    else:\n        return f(arg1 + 1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphl81bckb.py\", line 31, in <module>\n    test_check()\n  File \"/tmp/tmphl81bckb.py\", line 29, in test_check\n    check(f)\n  File \"/tmp/tmphl81bckb.py\", line 22, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"Negative argument.\")\n    if arg1 == 0:\n        return arg1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return f(arg1 - 1) + f(arg1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp4ocy7ffx.py\", line 29, in <module>\n    test_check()\n  File \"/tmp/tmp4ocy7ffx.py\", line 27, in test_check\n    check(f)\n  File \"/tmp/tmp4ocy7ffx.py\", line 20, in check\n    assert candidate(10) == 55\n  File \"/tmp/tmp4ocy7ffx.py\", line 17, in f\n    return f(arg1 - 1) + f(arg1)\n  File \"/tmp/tmp4ocy7ffx.py\", line 17, in f\n    return f(arg1 - 1) + f(arg1)\n  File \"/tmp/tmp4ocy7ffx.py\", line 17, in f\n    return f(arg1 - 1) + f(arg1)\n  [Previous line repeated 993 more times]\n  File \"/tmp/tmp4ocy7ffx.py\", line 10, in f\n    if arg1 < 0:\nRecursionError: maximum recursion depth exceeded in comparison\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 == 0:\n        return arg1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return f(arg1 - 1) + f(arg1)\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpe8tuwcqf.py\", line 28, in <module>\n    test_check()\n  File \"/tmp/tmpe8tuwcqf.py\", line 26, in test_check\n    check(f)\n  File \"/tmp/tmpe8tuwcqf.py\", line 19, in check\n    assert candidate(10) == 55\n  File \"/tmp/tmpe8tuwcqf.py\", line 15, in f\n    return f(arg1 - 1) + f(arg1)\n  File \"/tmp/tmpe8tuwcqf.py\", line 15, in f\n    return f(arg1 - 1) + f(arg1)\n  File \"/tmp/tmpe8tuwcqf.py\", line 15, in f\n    return f(arg1 - 1) + f(arg1)\n  [Previous line repeated 993 more times]\n  File \"/tmp/tmpe8tuwcqf.py\", line 10, in f\n    if arg1 == 0:\nRecursionError: maximum recursion depth exceeded in comparison\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"f(arg1) must be >= 0\")\n    if arg1 == 0:\n        return arg1\n    elif arg1 == 1:\n        return arg1\n    elif arg1 == 2:\n        return arg1\n    elif arg1 == 3:\n        return arg1\n    elif arg1 == 4:\n        return arg1\n    elif arg1 == 5:\n        return arg1\n    elif arg1 == 6:\n        return arg1\n    elif arg1 == 7:\n        return arg1\n    elif arg1 == 8:\n        return arg1\n    elif arg1 == 9:\n        return arg1\n    else:\n        raise ValueError(\"f(arg1) must be 0, 1, 2, 3, 4, 5, or 6\")\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmg7lewbm.py\", line 46, in <module>\n    test_check()\n  File \"/tmp/tmpmg7lewbm.py\", line 44, in test_check\n    check(f)\n  File \"/tmp/tmpmg7lewbm.py\", line 37, in check\n    assert candidate(10) == 55\n  File \"/tmp/tmpmg7lewbm.py\", line 33, in f\n    raise ValueError(\"f(arg1) must be 0, 1, 2, 3, 4, 5, or 6\")\nValueError: f(arg1) must be 0, 1, 2, 3, 4, 5, or 6\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError(\"f() takes positive argument\")\n    if arg1 == 0:\n        return 1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return arg1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmprn742cqz.py\", line 29, in <module>\n    test_check()\n  File \"/tmp/tmprn742cqz.py\", line 27, in test_check\n    check(f)\n  File \"/tmp/tmprn742cqz.py\", line 22, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        raise ValueError('argument must be non-negative')\n    if arg1 == 0:\n        return arg1\n    return arg1 + f(arg1 - 1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpxwowjk1u.py\", line 26, in <module>\n    test_check()\n  File \"/tmp/tmpxwowjk1u.py\", line 24, in test_check\n    check(f)\n  File \"/tmp/tmpxwowjk1u.py\", line 19, in check\n    assert candidate(8) == 21\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        return 0\n    if arg1 > 0:\n        return arg1\n    return arg1 + f(arg1)\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpw97_474f.py\", line 27, in <module>\n    test_check()\n  File \"/tmp/tmpw97_474f.py\", line 25, in test_check\n    check(f)\n  File \"/tmp/tmpw97_474f.py\", line 18, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    if arg1 < 0:\n        return arg1\n    elif arg1 == 0:\n        return 1\n    elif arg1 == 1:\n        return arg1\n    else:\n        return f(arg1-1) + f(arg1)\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp2xycjlqz.py\", line 29, in <module>\n    test_check()\n  File \"/tmp/tmp2xycjlqz.py\", line 27, in test_check\n    check(f)\n  File \"/tmp/tmp2xycjlqz.py\", line 20, in check\n    assert candidate(10) == 55\n  File \"/tmp/tmp2xycjlqz.py\", line 17, in f\n    return f(arg1-1) + f(arg1)\n  File \"/tmp/tmp2xycjlqz.py\", line 17, in f\n    return f(arg1-1) + f(arg1)\n  File \"/tmp/tmp2xycjlqz.py\", line 17, in f\n    return f(arg1-1) + f(arg1)\n  [Previous line repeated 993 more times]\n  File \"/tmp/tmp2xycjlqz.py\", line 10, in f\n    if arg1 < 0:\nRecursionError: maximum recursion depth exceeded in comparison\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmphqsij62d.py\", line 22, in <module>\n    test_check()\n  File \"/tmp/tmphqsij62d.py\", line 20, in test_check\n    check(f)\n  File \"/tmp/tmphqsij62d.py\", line 13, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int) -> int:\n    \"\"\"Return n-th Fibonacci number.\n    >>> f(10)\n    55\n    >>> f(1)\n    1\n    >>> f(8)\n    21\n    \"\"\"\n    return arg1 + arg1\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255475,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp8r2zqzyw.py\", line 23, in <module>\n    test_check()\n  File \"/tmp/tmp8r2zqzyw.py\", line 21, in test_check\n    check(f)\n  File \"/tmp/tmp8r2zqzyw.py\", line 14, in check\n    assert candidate(10) == 55\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    }
+  ]
+}

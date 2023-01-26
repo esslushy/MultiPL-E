@@ -1,0 +1,1678 @@
+{
+  "name": "HumanEval_45_triangle_area",
+  "language": "py",
+  "prompt": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n",
+  "tests": "def check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+  "stop_tokens": [
+    "\ndef",
+    "\n#",
+    "\nif",
+    "\nclass"
+  ],
+  "results": [
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n<|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpglfpcngv.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n<|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpglfpcngv.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_iaiopcx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp_iaiopcx.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp_iaiopcx.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * (arg1 + arg2) / 2.0\n<|endoftext|>                                                                                                                                                                                                                                                \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp3r4y30qf.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 * arg2) / (arg1 + arg2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgae9nmas.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgae9nmas.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgae9nmas.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n<|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpbhdqvhpd.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 * arg2) / (arg1 + arg2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgae9nmas.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgae9nmas.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgae9nmas.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 * arg2) / (arg1 + arg2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgae9nmas.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgae9nmas.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgae9nmas.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_iaiopcx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp_iaiopcx.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp_iaiopcx.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_iaiopcx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp_iaiopcx.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp_iaiopcx.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n<|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpbhdqvhpd.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_iaiopcx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp_iaiopcx.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp_iaiopcx.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_iaiopcx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp_iaiopcx.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp_iaiopcx.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_iaiopcx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp_iaiopcx.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp_iaiopcx.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * (arg1 + arg2) / 2.0\n<|endoftext|>                                                                                                                                                                                                                                                \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp3r4y30qf.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 * arg2) / (arg1 + arg2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgae9nmas.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgae9nmas.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgae9nmas.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n<|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpbhdqvhpd.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 * arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 * arg2) / (arg1 + arg2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgae9nmas.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgae9nmas.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgae9nmas.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n<|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpglfpcngv.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 * arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 * arg2) / (arg1 + arg2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgae9nmas.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgae9nmas.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgae9nmas.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpqipry88r.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpqipry88r.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpqipry88r.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpqipry88r.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpbakhj5qf.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpbakhj5qf.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpbakhj5qf.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_iaiopcx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp_iaiopcx.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp_iaiopcx.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpqipry88r.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmpqipry88r.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmpqipry88r.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpqipry88r.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n<|endoftext|>                                                                                                                                                                                                                                                                              \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp9g0rm60b.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                                              \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n<|endoftext|>                                                                                                                                                                                                                                                                              \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp9g0rm60b.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                                              \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n<|endoftext|>                                                                                                                                                                                                                                                                              \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp0vmsmnid.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                                              \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_iaiopcx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp_iaiopcx.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp_iaiopcx.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * (arg1 + arg2) / 2.0\n<|endoftext|>                                                                                                                                                                                                                                                \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmp3r4y30qf.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp_iaiopcx.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp_iaiopcx.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp_iaiopcx.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n<|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpglfpcngv.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(arg1**2 + arg2**2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcui0jb0z.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpcui0jb0z.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpcui0jb0z.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpcui0jb0z.py\", line 6, in f\n    return math.sqrt(arg1**2 + arg2**2)\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n<|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "  File \"/tmp/tmpglfpcngv.py\", line 7\n    <|endoftext|>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \n    ^\nSyntaxError: invalid syntax\n",
+      "exit_code": 1,
+      "status": "SyntaxError"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp5gyab145.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmp5gyab145.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmp5gyab145.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpjh0t3b6n.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpjh0t3b6n.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpjh0t3b6n.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\n  File \"/tmp/tmpjh0t3b6n.py\", line 6, in f\n    return math.sqrt(math.pow(arg1, 2) + math.pow(arg2, 2))\nNameError: name 'math' is not defined\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgchg33iu.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgchg33iu.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgchg33iu.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 * arg2) / (arg1 + arg2)\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpgae9nmas.py\", line 16, in <module>\n    test_check()\n  File \"/tmp/tmpgae9nmas.py\", line 14, in test_check\n    check(f)\n  File \"/tmp/tmpgae9nmas.py\", line 9, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) / 2.0\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0arkj_b7.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp0arkj_b7.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp0arkj_b7.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: int, arg2: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> f(5, 3)\n    7.5\n    \"\"\"\n    return (arg1 + arg2) * 0.5\n\n\ndef check(candidate):\n    assert candidate(5, 3) == 7.5\n    assert candidate(2, 2) == 2.0\n    assert candidate(10, 8) == 40.0\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255464,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp13tny9g1.py\", line 17, in <module>\n    test_check()\n  File \"/tmp/tmp13tny9g1.py\", line 15, in test_check\n    check(f)\n  File \"/tmp/tmp13tny9g1.py\", line 10, in check\n    assert candidate(5, 3) == 7.5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    }
+  ]
+}

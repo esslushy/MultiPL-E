@@ -1,0 +1,1678 @@
+{
+  "name": "HumanEval_16_count_distinct_characters",
+  "language": "py",
+  "prompt": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n",
+  "tests": "def check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+  "stop_tokens": [
+    "\ndef",
+    "\n#",
+    "\nif",
+    "\nclass"
+  ],
+  "results": [
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1) - len(arg1.lower())\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp322n8tgp.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmp322n8tgp.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmp322n8tgp.py\", line 12, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1) - len(arg1.lower())\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmvmvt440.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpmvmvt440.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpmvmvt440.py\", line 13, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1) - len(arg1.lower())\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp322n8tgp.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmp322n8tgp.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmp322n8tgp.py\", line 12, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1) - len(arg1.lower())\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmvmvt440.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpmvmvt440.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpmvmvt440.py\", line 13, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1) - len(arg1.lower())\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp322n8tgp.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmp322n8tgp.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmp322n8tgp.py\", line 12, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1.lower())\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpx773fln5.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpx773fln5.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpx773fln5.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1) - len(arg1.lower())\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmvmvt440.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpmvmvt440.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpmvmvt440.py\", line 13, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1) - len(arg1.lower())\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmvmvt440.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpmvmvt440.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpmvmvt440.py\", line 13, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1.lower())\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpps42lvdq.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpps42lvdq.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpps42lvdq.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1) - len(arg1.lower())\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp322n8tgp.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmp322n8tgp.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmp322n8tgp.py\", line 12, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1) - len(arg1.lower())\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmvmvt440.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpmvmvt440.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpmvmvt440.py\", line 13, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1) - len(arg1.lower())\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmvmvt440.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpmvmvt440.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpmvmvt440.py\", line 13, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1) - len(arg1.lower())\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmvmvt440.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpmvmvt440.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpmvmvt440.py\", line 13, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1.split())\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp74bdumhj.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmp74bdumhj.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmp74bdumhj.py\", line 13, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1.lower())\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpps42lvdq.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpps42lvdq.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpps42lvdq.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1) - len(arg1.lower())\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmvmvt440.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpmvmvt440.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpmvmvt440.py\", line 13, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1.lower())\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpps42lvdq.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpps42lvdq.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpps42lvdq.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(arg1) - len(arg1.lower())\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmvmvt440.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpmvmvt440.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpmvmvt440.py\", line 13, in check\n    assert candidate('abcde') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpmkqbbbjm.py\", line 20, in <module>\n    test_check()\n  File \"/tmp/tmpmkqbbbjm.py\", line 18, in test_check\n    check(f)\n  File \"/tmp/tmpmkqbbbjm.py\", line 13, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1.lower()))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "program": "def f(arg1: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> f('xyzXYZ')\n    3\n    >>> f('Jerry')\n    4\n    \"\"\"\n    return len(set(arg1))\n\n\ndef check(candidate):\n    assert candidate('') == 0\n    assert candidate('abcde') == 5\n    assert candidate('abcdecadeCADE') == 5\n    assert candidate('aaaaAAAAaaaa') == 1\n    assert candidate('Jerry jERRY JeRRRY') == 5\n\ndef test_check():\n    check(f)\n\ntest_check()\n",
+      "timestamp": 1674255426,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpvs68dgz2.py\", line 21, in <module>\n    test_check()\n  File \"/tmp/tmpvs68dgz2.py\", line 19, in test_check\n    check(f)\n  File \"/tmp/tmpvs68dgz2.py\", line 14, in check\n    assert candidate('abcdecadeCADE') == 5\nAssertionError\n",
+      "exit_code": 1,
+      "status": "Exception"
+    }
+  ]
+}
