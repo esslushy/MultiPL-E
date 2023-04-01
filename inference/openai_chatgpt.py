@@ -18,7 +18,7 @@ def completions(prompt: str, max_tokens: int, temperature: float, n: int, top_p,
         model=config["model"],
         messages=[
             # This tells the chatbot what role it is fulfilling.
-            {"role": "system", "content":  "Your job is to write the functions asked of you by the user."},
+            {"role": "system", "content": "Your job is to write just the functions asked of you by the user. Write only the functions."},
             {"role": "user", "content": f"I have a function prompt ```{prompt}```\n Please produce the function for me which completes this prompt."}
         ],
         temperature=temperature,
@@ -65,7 +65,7 @@ def get_code_body(completion_messages):
         code_body = ""
         code_lines = m.split("\n")
         for line in code_lines:
-            if line.startswith("    "):
+            if line.startswith("  "):
                 code_body += line + "\n"
         cleaned_messages.append(code_body)
     return cleaned_messages

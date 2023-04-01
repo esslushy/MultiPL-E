@@ -1,20 +1,23 @@
-language: py
-output_dir: experiments/
-prompt_num: 1
+language: js
+output_dir: ChatGPT-Prompt-Experiments/
+prompt_num: 4
 prompts:
 - 'Write the function for me that fulfills the prompt: {}'
 - Please write the entire function that matches {}
 - Please provide a unique solution that complete the function that starts with {}
 - "I have a function prompt ```{}```\n Please produce the function for me which completes\
   \ this prompt."
-- "I want to test your ability to write a function. I have a function defintion and signature: ```{}```\n \
- Please write the function including the function declaration, return statement, and closing bracket that fulfills this function prompt."
-system_role: 0
+- "I want to test your ability to write a function. I have a function defintion and\
+  \ signature: ```{}```\n Please write the function including the function declaration,\
+  \ return statement, and closing bracket that fulfills this function prompt."
+system_role: 4
 system_roles:
 - You are a programmer whose job it is to finish the functions provided by the user.
 - Your job is to write the functions asked of you by the user.
 - You are a language model whose job it is to produce the full function that fulfills
   the prompt.
-- Your job is to write just the functions asked of you by the user. Write only the function.
-- "Your job is to write the complete function that completes the given function prompt. \
-  Write the entire function from function declaration to the return statement and closing bracket."
+- Your job is to write just the functions asked of you by the user. Write only the
+  function.
+- Your job is to write the complete function that completes the given function prompt.
+  Write the entire function from function declaration to the return statement and
+  closing bracket.
