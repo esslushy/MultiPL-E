@@ -53,11 +53,8 @@ def get_code_body(completion_messages):
     cleaned_messages = []
     for m in completion_messages:
         # Get code section
-        if m.count("```") == 2:
-            # One code section
-            start, stop = m.index("```") + 3, m.rindex("```")
-        elif m.count("```") > 2:
-            # Multiple code sections (select first)
+        if m.count("```") >= 2:
+            # Select first code section
             start = m.index("```") + 3
             stop = m[start:].index("```") + start
         else:
