@@ -18,11 +18,8 @@ def completions(prompt: str, max_tokens: int, temperature: float, n: int, top_p,
         model=config["model"],
         messages=[
             # This tells the chatbot what role it is fulfilling.
-            {"role": "system", "content":  "Your job is to write the complete function that completes the given function prompt. \
-                                            Write the entire function from function declaration to the return statement and closing bracket."},
-            {"role": "user", "content": f"I want to test your ability to write a function. I have a function defintion and signature: ```{prompt}```\n \
-                                        Please write the function including the function declaration, return statement, and closing bracket that fulfills \
-                                        this function prompt."}
+            {"role": "system", "content":  "Your job is to write the functions asked of you by the user."},
+            {"role": "user", "content": f"I have a function prompt ```{prompt}```\n Please produce the function for me which completes this prompt."}
         ],
         temperature=temperature,
         top_p=top_p,
