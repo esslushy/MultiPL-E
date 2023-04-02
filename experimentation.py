@@ -6,8 +6,6 @@ import yaml
 def main():
     args = ArgumentParser()
     # Required experiment arguments
-    args.add_argument("--num-system-roles", help="The number of system roles in the experimentation config.", required=True, type=int)
-    args.add_argument("--num-prompts", help="The number of prompts in the experimentation config.", required=True, type=int)
     args.add_argument("--languages", help="The languages to test over", required=True, nargs="+")
     args.add_argument("--exp-dir", help="The directory storing the experiment results", required=True, type=str)
     # These defaults are good, but I will allow changes.
@@ -22,16 +20,18 @@ def main():
     if not os.path.exists(args.exp_dir):
         os.mkdir(args.exp_dir)
 
+    # Load experiment config
+    with open("inference/chatgpt/experiments_config.yaml") as f:
+        experiment_config = yaml.safe_load(f)
+
     # Run experiments
     for lang in args.languages:
-        for system_role in range(args.num_system_roles):
-            for prompt in range(args.num_prompts):
+        for system_role in range(len(experiment_config["system_roles"])):
+            for prompt in range(len(experiment_config["prompts"])):
                 # Update experimentation file
-                with open("inference/chatgpt/experiments_config.yaml") as f:
-                    experiment_config = yaml.safe_load(f)
-                    experiment_config["system_role"] = system_role
-                    experiment_config["prompt_num"] = prompt
-                    experiment_config["language"] = lang
+                experiment_config["system_role"] = system_role
+                experiment_config["prompt_num"] = prompt
+                experiment_config["language"] = lang
                 with open("inference/chatgpt/experiments_config.yaml", "wt") as f:
                     yaml.dump(experiment_config, f)
                 # Run command
