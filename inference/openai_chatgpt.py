@@ -3,6 +3,7 @@ from openai.error import RateLimitError, APIConnectionError, Timeout
 import random
 import yaml
 from time import sleep
+import sys
 
 name = "chatgpt"
 
@@ -61,11 +62,14 @@ def get_code_body(completion_messages):
             # No code sections or one incomplete code section
             start, stop = 0, len(m)
         m = m[start:stop]
-        # Add all lines with 4 tabs (should be function body)
-        code_body = ""
-        code_lines = m.split("\n")
-        for line in code_lines:
-            if line.startswith("  "):
-                code_body += line + "\n"
+        """
+        After we have extracted the code the model produced, we will select everything starting on the first 
+        indented line. This makes the assumption that the first unindented line is the function declaration
+        and then everything else is part of the function.
+        """
+        code_body = m[m.index("  "):]
+        if "cpp" in sys.argv or "java" in sys.argv or "cs" in sys.argv or "rs" in sys.argv or "scala" in sys.argv or "sh" in sys.argv or "swift" in sys.argv:
+            # Special case, these languages take everything before last closing brace (end of function)
+            code_body = code_body[:code_body.rindex("}")]
         cleaned_messages.append(code_body)
     return cleaned_messages
