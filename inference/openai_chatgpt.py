@@ -70,6 +70,7 @@ def get_code_body(completion_messages):
         code_body = m[m.index("  "):]
         if "cpp" in sys.argv or "java" in sys.argv or "cs" in sys.argv or "rs" in sys.argv or "scala" in sys.argv or "sh" in sys.argv or "swift" in sys.argv:
             # Special case, these languages take everything before last closing brace (end of function)
-            code_body = code_body[:code_body.rindex("}")]
+            if code_body.count("}") > 0:
+                code_body = code_body[:code_body.rindex("}")]
         cleaned_messages.append(code_body)
     return cleaned_messages
