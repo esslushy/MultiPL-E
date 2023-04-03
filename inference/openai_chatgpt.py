@@ -68,6 +68,9 @@ def get_code_body(completion_messages):
         and then everything else is part of the function.
         """
         code_body = m[m.index("  "):]
+        if "d" in sys.argv:
+            # Add back opening curly to d
+            code_body = "{\n"  + code_body
         if "cpp" in sys.argv or "java" in sys.argv or "cs" in sys.argv or "rs" in sys.argv or "scala" in sys.argv or "sh" in sys.argv or "swift" in sys.argv:
             # Special case, these languages take everything before last closing brace (end of function)
             if code_body.count("}") > 0:
