@@ -15,7 +15,7 @@ with open("inference/chatgpt/config.yaml") as f:
 
 # Stop tokens remain unused as chatgpt has a different style of tokens than normally seen in other models.
 def completions(prompt: str, max_tokens: int, temperature: float, n: int, top_p, stop):
-    completions_response = complete_or_fail_after_n_tries(lambda: openai.ChatCompletion.create(
+    completion_messages = complete_or_fail_after_n_tries(lambda: openai.ChatCompletion.create(
         model=config["model"],
         messages=[
             # This tells the chatbot what role it is fulfilling.
@@ -27,8 +27,6 @@ def completions(prompt: str, max_tokens: int, temperature: float, n: int, top_p,
         n=n,
         max_tokens=max_tokens
     ), config["max_retries"])
-    # Pull out just the message content
-    completion_messages = [choice.message.content for choice in completions_response.choices]
     if config["debug"]:
         print(completion_messages)
     # pull out the code body
@@ -41,7 +39,9 @@ def complete_or_fail_after_n_tries(func, n):
             print("Failed to get response from chatgpt API, max retries reached, leaving completions blank.")
         return []
     try:
-        return func()
+        # Get completion messages
+        completions_response =  func()
+        return [choice.message.content for choice in completions_response.choices]
     except (RateLimitError, APIConnectionError, Timeout, APIError, ServiceUnavailableError, TryAgain):
         # If can't connect, keep retrying, giving longer pauses between each retry
         seconds = 1.5 ** (config["max_retries"] - n) + random.random()
