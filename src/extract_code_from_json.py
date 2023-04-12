@@ -12,7 +12,7 @@ def extract_programs(results, num_programs, output, lang):
         results = result_json["results"]
 
         for i in range(num_programs):
-            with open(output / f"{i}-{results[i]['status']}.{lang}", "w") as f:
+            with open(output / f"{result_json['name']}-{i}-{results[i]['status']}.{lang}", "w") as f:
                 f.write(results[i]["program"])
 
 def main():
