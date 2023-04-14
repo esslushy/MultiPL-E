@@ -13,7 +13,6 @@ with open("inference/chatgpt/config.yaml") as f:
     openai.api_key = config["api_key"]
     openai.organization = config["organization_id"]
 
-# Stop tokens remain unused as chatgpt has a different style of tokens than normally seen in other models.
 def completions(prompt: str, max_tokens: int, temperature: float, n: int, top_p, stop):
     completion_messages = complete_or_fail_after_n_tries(lambda: openai.ChatCompletion.create(
         model=config["model"],
@@ -30,7 +29,7 @@ def completions(prompt: str, max_tokens: int, temperature: float, n: int, top_p,
     if config["debug"]:
         print(completion_messages)
     # pull out the code body
-    return get_code_body(completion_messages)
+    return get_code_body(completion_messages, stop)
 
 def complete_or_fail_after_n_tries(func, n):
     if n == 0:
@@ -50,7 +49,7 @@ def complete_or_fail_after_n_tries(func, n):
         sleep(seconds)
         return complete_or_fail_after_n_tries(func, n-1)
 
-def get_code_body(completion_messages):
+def get_code_body(completion_messages, stop):
     cleaned_messages = []
     for m in completion_messages:
         # Get code section
@@ -71,9 +70,10 @@ def get_code_body(completion_messages):
         if "d" in sys.argv:
             # Add back opening curly to d
             code_body = "{\n"  + code_body
-        if "cpp" in sys.argv or "java" in sys.argv or "cs" in sys.argv or "rs" in sys.argv or "scala" in sys.argv or "sh" in sys.argv or "swift" in sys.argv:
-            # Special case, these languages take everything before last closing brace (end of function)
-            if code_body.count("}") > 0:
-                code_body = code_body[:code_body.rindex("}")]
+        # Apply stop token logic at this level
+        for stop_token in stop:
+            if stop_token in code_body:
+                code_body = code_body[:code_body.index(stop_token)]
+                break
         cleaned_messages.append(code_body)
     return cleaned_messages

@@ -20,7 +20,6 @@ with open("inference/chatgpt/config.yaml") as f:
     openai.api_key = config["api_key"]
     openai.organization = config["organization_id"]
 
-# Stop tokens remain unused as chatgpt has a different style of tokens than normally seen in other models.
 def completions(prompt: str, max_tokens: int, temperature: float, n: int, top_p, stop):
     completion_messages = complete_or_fail_after_n_tries(lambda: openai.ChatCompletion.create(
         model=config["model"],
@@ -37,7 +36,7 @@ def completions(prompt: str, max_tokens: int, temperature: float, n: int, top_p,
     if config["debug"]:
         print(completion_messages)
     # pull out the code body
-    processed_response = get_code_body(completion_messages)
+    processed_response = get_code_body(completion_messages, stop)
     # Save experiment data
     raw_data = {
         "system_prompt" : experiment_config["system_roles"][experiment_config["system_role"]],
