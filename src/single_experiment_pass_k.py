@@ -44,7 +44,7 @@ def main():
         if temperature == 0.2:
             pass_1 = np.mean([r["pass@1"] for r in results])
             print(f"{name},1,{pass_1}")
-        elif temperature == 0.8  or temperature == 1.6:
+        elif temperature == 0.8:
             pass_10 = np.mean([r["pass@10"] for r in results])
             pass_100 = np.mean([r["pass@100"] for r in results])
             print(f"{name},10,{pass_10}")
