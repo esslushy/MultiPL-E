@@ -56,11 +56,11 @@ def get_code_body(completion_messages, stop):
         if m.count("```") >= 2:
             # Select first code section
             start = m.index("```") + 3
-            stop = m[start:].index("```") + start
+            end = m[start:].index("```") + start
         else:
             # No code sections or one incomplete code section
-            start, stop = 0, len(m)
-        m = m[start:stop]
+            start, end = 0, len(m)
+        m = m[start:end]
         """
         After we have extracted the code the model produced, we will select everything starting on the first 
         indented line. This makes the assumption that the first unindented line is the function declaration
