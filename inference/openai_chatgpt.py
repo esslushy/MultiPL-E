@@ -7,6 +7,29 @@ import sys
 
 name = "chatgpt"
 
+languages = {
+    "cpp" : "c++",
+    "cs" : "c#",
+    "d" : "d",
+    "fs" : "f#",
+    "go" : "go",
+    "java" : "java",
+    "jl" : "julia",
+    "js" : "javascript",
+    "lua" : "lua",
+    "php" : "php",
+    "pl" : "PL",
+    "py" : "python",
+    "r" : "R",
+    "rb" : "ruby",
+    "rkt" : "DrRacket",
+    "rs" : "rust",
+    "scala" : "scala",
+    "sh" : "shell",
+    "swift" : "swift",
+    "ts" : "typescript"
+}
+
 # Set up the configuration file
 with open("inference/chatgpt/config.yaml") as f:
     config = yaml.safe_load(f)
@@ -14,12 +37,17 @@ with open("inference/chatgpt/config.yaml") as f:
     openai.organization = config["organization_id"]
 
 def completions(prompt: str, max_tokens: int, temperature: float, n: int, top_p, stop):
+    # Tells it what language to do 
+    for language in languages.keys():
+        if language in sys.argv:
+            prompt_language = languages[language]
+            break
     completion_messages = complete_or_fail_after_n_tries(lambda: openai.ChatCompletion.create(
         model=config["model"],
         messages=[
             # This tells the chatbot what role it is fulfilling.
             {"role": "system", "content": "Your job is to write just the functions asked of you by the user. Write only the functions."},
-            {"role": "user", "content": f"I have a function prompt ```{prompt}```\n Please produce the function for me which completes this prompt."}
+            {"role": "user", "content": f"I have a {prompt_language} function prompt ```{prompt}```\n Please produce the function in {prompt_language} for me which completes this prompt."}
         ],
         temperature=temperature,
         top_p=top_p,
