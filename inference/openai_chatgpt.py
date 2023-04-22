@@ -30,6 +30,12 @@ languages = {
     "ts" : "typescript"
 }
 
+# Tells it what language to do 
+for language in languages.keys():
+    if language in sys.argv:
+        prompt_language = languages[language]
+        break
+
 # Set up the configuration file
 with open("inference/chatgpt/config.yaml") as f:
     config = yaml.safe_load(f)
@@ -37,11 +43,6 @@ with open("inference/chatgpt/config.yaml") as f:
     openai.organization = config["organization_id"]
 
 def completions(prompt: str, max_tokens: int, temperature: float, n: int, top_p, stop):
-    # Tells it what language to do 
-    for language in languages.keys():
-        if language in sys.argv:
-            prompt_language = languages[language]
-            break
     completion_messages = complete_or_fail_after_n_tries(lambda: openai.ChatCompletion.create(
         model=config["model"],
         messages=[
