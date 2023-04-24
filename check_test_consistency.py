@@ -54,7 +54,8 @@ def check_completions_file(update: bool, p: Path):
         data["tests"] = expected_tests
         with gzip.open(p, "wt") as f:
             json.dump(data, f)
-        Path(results_filename).unlink()
+        if Path(results_filename).exists():
+            Path(results_filename).unlink()
     else:
         print(results_filename)
         
