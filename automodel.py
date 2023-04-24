@@ -1,35 +1,17 @@
 """
-
+This script produces completions for roughly any AutoModelForCausalLM.
 """
-# NOTE(arjun): I've removed fill_in_the_middle for now. But, copy it over from santacoder_base.py.
-
+from multipl_e.completions import make_main, stop_at_stop_token, partial_arg_parser
 import torch
-from typing import List, Tuple
-from transformers import AutoTokenizer, AutoModelForCausalLM
-import os
-from .local_huggingface_model import _stop_at_stop_token
-
-FIM_PREFIX = "<fim-prefix>"
-FIM_MIDDLE = "<fim-middle>"
-FIM_SUFFIX = "<fim-suffix>"
-FIM_PAD = "<fim-pad>"
-EOD = "<|endoftext|>"
-SPEC_TOKS = [EOD, FIM_PREFIX, FIM_MIDDLE, FIM_SUFFIX, FIM_PAD]
-
-def extract_fim_part(s: str):
-    # Find the index of <fim-middle>
-    start = s.find(FIM_MIDDLE) + len(FIM_MIDDLE)
-    stop = s.find(EOD, start) or len(s)
-    return s[start:stop]
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 class Model:
     def __init__(self, name, revision):
-        self.model = AutoModelForCausalLM.from_pretrained(name, revision=revision, trust_remote_code=True)
+        self.model = AutoModelForCausalLM.from_pretrained(name, revision=revision)
         self.model = self.model.half().cuda()
-
-        self.tokenizer = AutoTokenizer.from_pretrained(name, revision=revision, padding_side="left", trust_remote_code=True)
+        # self.model = self.model.cuda()
+        self.tokenizer = AutoTokenizer.from_pretrained(name, revision=revision, padding_side="left")
         self.tokenizer.pad_token = "<|endoftext|>"
-        self.special_tokens = SPEC_TOKS
         
     def completion_tensors(
         self,
@@ -69,7 +51,7 @@ class Model:
     def completions(
         self, prompt: str, max_tokens: int, temperature: float, n: int, top_p, stop
     ):
-        prompt = prompt.strip()  # NOTE(arjun): Critical
+        prompt = prompt.strip()
         output_tensors = self.completion_tensors(
             prompt,
             max_tokens,
@@ -78,17 +60,22 @@ class Model:
             top_p,
         )
         return [
-            _stop_at_stop_token(self.decode_single_output(output_tensor, prompt), stop + self.special_tokens)
+            stop_at_stop_token(self.decode_single_output(output_tensor, prompt), stop)
             for output_tensor in output_tensors
         ]
 
+def main():
+    args = partial_arg_parser()
+    args.add_argument("--name", type=str, required=True)
+    args.add_argument("--revision", type=str)
+    args.add_argument("--name-override", type=str)
+    args = args.parse_args()
+    model = Model(args.name, args.revision)
+    if args.name_override:
+        name = args.name_override
+    else:
+        name = args.name.replace("/", "_").replace("-", "_")
+    make_main(args, name, model.completions)
 
-
-revision = os.environ.get("MODEL_REVISION")
-if revision is None:
-	print("MODEL_REVISION environment variable not set")
-	exit(1)
-model = Model("bigcode/scaling-laws-models", revision=revision)
-completions = model.completions
-name = f"bigcode_scalinglaws_{revision}"
-
+if __name__ == "__main__":
+    main()

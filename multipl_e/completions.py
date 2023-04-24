@@ -2,7 +2,6 @@ import datasets
 import argparse
 import gzip
 import json
-import importlib
 from pathlib import Path
 from tqdm import tqdm
 import sys
@@ -37,7 +36,7 @@ def from_remote_dataset(args):
 
 def from_local_dataset(args):
     with open(args.dataset, "r") as f:
-        problems_list = json.load(f)
+        problems_list = [ json.loads(line) for line in f ]
         start_index = (
             args.input_start_index if args.input_start_index is not None else 0
         )
@@ -50,8 +49,7 @@ def from_local_dataset(args):
         problems = datasets.Dataset.from_list(problems_list[start_index:stop_index])
     return problems
 
-
-def main():
+def partial_arg_parser():
     args = argparse.ArgumentParser()
 
     args.add_argument(
@@ -90,12 +88,6 @@ def main():
         required="--use-local" not in sys.argv,
         help="either mbpp or humaneval",
     )
-    args.add_argument(
-        "--model-name",
-        type=str,
-        required=True,
-        help="either incoder or codegen. To add a new model, copy and modify codegen.py",
-    )
     args.add_argument("--temperature", type=float, required=True)
     args.add_argument(
         "--input-start-index",
@@ -109,18 +101,20 @@ def main():
     args.add_argument(
         "--batch-size", type=int, default=16, help="Number of completions to batch"
     )
-    args = args.parse_args()
+    return args
 
-    model = importlib.import_module(args.model_name)
+def make_main(args, model_name, gen_completions):
+
+    assert "-" not in model_name, "Model name must not have hyphens"
 
     if args.output_dir is None:
         args.output_dir = (
             (
-                f"{args.root_dataset}-{args.lang}-{model.name}-{args.temperature}-reworded"
+                f"{args.root_dataset}-{args.lang}-{model_name}-{args.temperature}-reworded"
             )
             if not args.use_local
             else (
-                f"{args.dataset.split('/')[-1].split('.')[0]}-{model.name}-{args.temperature}-reworded"
+                f"{args.dataset.split('/')[-1].split('.')[0]}-{model_name}-{args.temperature}-reworded"
             )
         )
 
@@ -137,7 +131,6 @@ def main():
         problems = from_remote_dataset(args)
 
     for problem in tqdm(problems, unit="problems"):
-        # NOTE(arjun): This is a litte hack to delay loading the model, so that we fail faster.
         problem_filename = exp_dir / f"{problem['name']}.json.gz"
         if problem_filename.exists():
             with gzip.open(problem_filename, "rt") as f:
@@ -154,11 +147,14 @@ def main():
             range(len(completions), args.completion_limit, args.batch_size),
             unit="completions",
         ):
-            new_completions = model.completions(
+            this_batch = min(args.batch_size, args.completion_limit - len(completions))
+            if this_batch == 0:
+                break
+            new_completions = gen_completions(
                 prompt=problem["prompt"],
                 max_tokens=MAX_TOKENS,
                 temperature=args.temperature,
-                n=args.batch_size,
+                n=this_batch,
                 top_p=TOP_P,
                 stop=problem["stop_tokens"],
             )
@@ -178,6 +174,17 @@ def main():
         with gzip.open(problem_filename, "wt") as f:
             json.dump(result_json, f)
 
+def stop_at_stop_token(decoded_string, stop_tokens):
+    """
+    Produces the prefix of decoded_string that ends at the first occurrence of
+    a stop_token.
 
-if __name__ == "__main__":
-    main()
+    WARNING: the decoded_string *must not* include the prompt, which may have stop tokens
+    itself.
+    """
+    min_stop_index = len(decoded_string)
+    for stop_token in stop_tokens:
+        stop_index = decoded_string.find(stop_token)
+        if stop_index != -1 and stop_index < min_stop_index:
+            min_stop_index = stop_index
+    return decoded_string[:min_stop_index]
