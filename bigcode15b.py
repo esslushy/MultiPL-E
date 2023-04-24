@@ -4,11 +4,11 @@ Do not use this file directly.
 import torch
 from typing import List, Tuple
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from .local_huggingface_model import _stop_at_stop_token
+from multipl_e.completions import partial_arg_parser, make_main, stop_at_stop_token
 
-FIM_PREFIX = "<fim-prefix>"
-FIM_MIDDLE = "<fim-middle>"
-FIM_SUFFIX = "<fim-suffix>"
+FIM_PREFIX = "<fim_prefix>"
+FIM_MIDDLE = "<fim_middle>"
+FIM_SUFFIX = "<fim_suffix>"
 FIM_PAD = "<fim-pad>"
 EOD = "<|endoftext|>"
 SPEC_TOKS = [EOD, FIM_PREFIX, FIM_MIDDLE, FIM_SUFFIX, FIM_PAD]
@@ -19,13 +19,15 @@ def extract_fim_part(s: str):
     stop = s.find(EOD, start) or len(s)
     return s[start:stop]
 
+NAME = "bigcode/large-model"
+
 class Model:
-    def __init__(self, name, revision):
-        self.model = AutoModelForCausalLM.from_pretrained(name, revision=revision, trust_remote_code=True)
-        self.model = self.model.cuda()
+    def __init__(self, revision):
+        self.model = AutoModelForCausalLM.from_pretrained(NAME, revision=revision, trust_remote_code=True)
+        self.model = self.model.half().cuda()
 
         # In case the model creator did not upload a copy of the tokenizer.
-        self.tokenizer = AutoTokenizer.from_pretrained("bigcode/santacoder", revision="47ad9f0", padding_side="left", trust_remote_code=True)
+        self.tokenizer = AutoTokenizer.from_pretrained(NAME, revision=revision, padding_side="left", trust_remote_code=True)
         self.tokenizer.pad_token = "<|endoftext|>"
         self.special_tokens = SPEC_TOKS
         
@@ -76,7 +78,7 @@ class Model:
             top_p,
         )
         return [
-            _stop_at_stop_token(self.decode_single_output(output_tensor, prompt), stop + self.special_tokens)
+            stop_at_stop_token(self.decode_single_output(output_tensor, prompt), stop + self.special_tokens)
             for output_tensor in output_tensors
         ]
 
@@ -101,4 +103,20 @@ class Model:
             extract_fim_part(self.tokenizer.decode(tensor)) for tensor in output
         ]
 
+CHECKPOINT_TO_REVISION = {
+    "800m": "53e1e76",
+    "600m": "25c10ec",
+    "400m": "cf0b54a",
+    "200m": "882e307"
+}
 
+def main():
+    args = partial_arg_parser()
+    args.add_argument("--checkpoint", type=str, required=True)
+    args = args.parse_args()
+    revision = CHECKPOINT_TO_REVISION[args.checkpoint]
+    model = Model(revision)
+    make_main(args, "bigcode_15b_" + args.checkpoint, model.completions)
+
+if __name__ == "__main__":
+    main()
