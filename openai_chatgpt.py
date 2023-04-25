@@ -37,7 +37,7 @@ for language in languages.keys():
         break
 
 # Set up the configuration file
-with open("inference/chatgpt/config.yaml") as f:
+with open("chatgpt/config.yaml") as f:
     config = yaml.safe_load(f)
     openai.api_key = config["api_key"]
     openai.organization = config["organization_id"]

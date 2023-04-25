@@ -7,7 +7,7 @@ from .openai_chatgpt import complete_or_fail_after_n_tries, get_code_body
 name = "chatgpt"
 
 # Set up the configuration file
-with open("inference/chatgpt/experiments_config.yaml") as f:
+with open("chatgpt/experiments_config.yaml") as f:
     experiment_config = yaml.safe_load(f)
     expt_out = os.path.join(
         experiment_config["output_dir"],
@@ -15,7 +15,7 @@ with open("inference/chatgpt/experiments_config.yaml") as f:
     )
 
 # Set up the configuration file
-with open("inference/chatgpt/config.yaml") as f:
+with open("chatgpt/config.yaml") as f:
     config = yaml.safe_load(f)
     openai.api_key = config["api_key"]
     openai.organization = config["organization_id"]
