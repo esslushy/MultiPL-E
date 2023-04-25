@@ -26,7 +26,7 @@ def main():
         problem_to_bleu_scores[problem] = []
         for completion in problem_to_completions[problem]:
             problem_to_bleu_scores[problem].append(sentence_bleu([problem_to_canonical_solution[re.findall(r'\d+', problem)[0]].split(" ")], completion.split(" ")))
-        problem_to_bleu_scores[problem] = np.mean(problem_to_bleu_scores[problem])
+        problem_to_bleu_scores[problem] = np.max(problem_to_bleu_scores[problem])
 
     if args.csv:
         with open(args.csv, "wt+") as f:
