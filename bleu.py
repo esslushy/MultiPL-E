@@ -5,20 +5,16 @@ import numpy as np
 import json
 import re
 import gzip
+from pathlib import Path
 
 def main():
     args = ArgumentParser()
-    args.add_argument("--use-local", action="store_true", help="Tells whether the completions are from the completions dataset or locally on your machine.")
     args.add_argument("--completions", help="Which completions to generate BLEU score for", type=str, required=True)
+    args.add_argument("--csv", type=Path, help="Stores results in a csv file")
     args = args.parse_args()
 
     true_dataset = load_dataset("openai_humaneval")
-    if args.use_local:
-        with gzip.open(args.completions) as f:
-            completions_list = json.load(f)
-            pred_dataset = Dataset.from_list(completions_list)
-    else:
-        pred_dataset = load_dataset("bigcode/MultiPL-E-completions", split=f"humaneval.py.{args.completions}.0.2.reworded")
+    pred_dataset = load_dataset("bigcode/MultiPL-E-completions", split=f"humaneval.py.{args.completions}.0.2.reworded")
 
     problem_to_canonical_solution = {re.findall(r'\d+', task_id)[0]: cannonical for task_id, cannonical in zip(true_dataset["test"]["task_id"], true_dataset["test"]["canonical_solution"])}
     problem_to_completions = {problem: completions for problem, completions in  zip(pred_dataset["problem"], pred_dataset["completions"])}
@@ -31,8 +27,13 @@ def main():
             problem_to_bleu_scores[problem].append(sentence_bleu([problem_to_canonical_solution[re.findall(r'\d+', problem)[0]]], completion))
         problem_to_bleu_scores[problem] = np.mean(problem_to_bleu_scores[problem])
 
-    print("Problem,BLEU")
-    [print(f"{problem},{score}") for problem, score in zip(problem_to_bleu_scores.keys(), problem_to_bleu_scores.values())]
+    if args.csv:
+        with open(args.csv, "wt+") as f:
+            f.write("Problem,BLEU\n")
+            f.writelines([f"{problem},{score}\n" for problem, score in zip(problem_to_bleu_scores.keys(), problem_to_bleu_scores.values())])
+    else:
+        print("Problem,BLEU")
+        [print(f"{problem},{score}") for problem, score in zip(problem_to_bleu_scores.keys(), problem_to_bleu_scores.values())]
 
 if __name__ == "__main__":
     main()
