@@ -1,15 +1,16 @@
 """
-Do not use this file directly.
+Inference with SantaCoder. SantaCoder is *almost* the same as StarCoder.
+But, it has different FIM tokens, so we need a different file.
 """
 import torch
 from typing import List, Tuple
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from multipl_e.completions import partial_arg_parser, make_main, stop_at_stop_token
 
-FIM_PREFIX = "<fim_prefix>"
-FIM_MIDDLE = "<fim_middle>"
-FIM_SUFFIX = "<fim_suffix>"
-FIM_PAD = "<fim_pad>"
+FIM_PREFIX = "<fim-prefix>"
+FIM_MIDDLE = "<fim-middle>"
+FIM_SUFFIX = "<fim-suffix>"
+FIM_PAD = "<fim-pad>"
 EOD = "<|endoftext|>"
 SPEC_TOKS = [EOD, FIM_PREFIX, FIM_MIDDLE, FIM_SUFFIX, FIM_PAD]
 
@@ -19,19 +20,23 @@ def extract_fim_part(s: str):
     stop = s.find(EOD, start) or len(s)
     return s[start:stop]
 
-NAME = "bigcode/large-model"
+NAME = "bigcode/gpt_bigcode-santacoder"
 
 class Model:
-    def __init__(self, fim_return, revision):
+    def __init__(self, fim_return):
         name = NAME
-        self.model = AutoModelForCausalLM.from_pretrained(name, revision=revision, trust_remote_code=True, torch_dtype=torch.float16)
+        self.model = AutoModelForCausalLM.from_pretrained(name, torch_dtype=torch.float16)
         self.model = self.model.cuda()
         self.fim_return = fim_return
 
         # In case the model creator did not upload a copy of the tokenizer.
-        self.tokenizer = AutoTokenizer.from_pretrained(name, revision=revision, padding_side="left", trust_remote_code=True)
+        self.tokenizer = AutoTokenizer.from_pretrained(name, padding_side="left")
         self.tokenizer.pad_token = "<|endoftext|>"
         self.special_tokens = SPEC_TOKS
+        self.tokenizer.add_special_tokens({
+            'additional_special_tokens': self.special_tokens,
+            'pad_token': EOD,
+        })        
         
     def completion_tensors(
         self,
@@ -71,11 +76,13 @@ class Model:
     def completions(
         self, prompt: str, max_tokens: int, temperature: float, n: int, top_p, stop
     ):
-        if self.fim_return:
-            middles = self.fill_in_the_middle([(prompt.strip(), "    return result")] * n, max_tokens, temperature)
-            middles = [stop_at_stop_token(middle, stop) for middle in middles]
-            return [ s + "    return result" for s in middles ]
         
+        if self.fim_return:
+            middles = self.fill_in_the_middle([(prompt, "    return result")] * n, max_tokens, temperature)
+            middles = [stop_at_stop_token(middle, [""]) for middle in middles]
+            return [ s + "    return result" for s in middles ]
+
+            
         prompt = prompt.strip()  # NOTE(arjun): Critical
         output_tensors = self.completion_tensors(
             prompt,
@@ -110,22 +117,13 @@ class Model:
             extract_fim_part(self.tokenizer.decode(tensor)) for tensor in output
         ]
 
-CHECKPOINT_TO_REVISION = {
-    "1000m": "ff027dab19375ab76970819bd56787320b4a06fa",
-    "800m": "53e1e76",
-    "600m": "25c10ec",
-    "400m": "cf0b54a",
-    "200m": "882e307"
-}
 
 def main():
     args = partial_arg_parser()
-    args.add_argument("--checkpoint", type=str, required=True)
     args.add_argument("--fim-return", action="store_true")
     args = args.parse_args()
-    revision = CHECKPOINT_TO_REVISION[args.checkpoint]
-    model = Model(args.fim_return, revision)
-    make_main(args, "bigcode_15b_" + args.checkpoint, model.completions)
+    model = Model(args.fim_return)
+    make_main(args, "santacoder", model.completions)
 
 if __name__ == "__main__":
     main()
