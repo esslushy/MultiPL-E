@@ -39,7 +39,7 @@ TargetExp = str
 class Translator(LanguageTranslator[TargetExp]):
 
     def stop(self):
-        return ["\ndef", "\n#", "\nif", "\nclass"]
+        return ["\ndef", "\n#", "\nif", "\nclass", "\nassert"]
 
     def file_ext(self):
         return "py"
